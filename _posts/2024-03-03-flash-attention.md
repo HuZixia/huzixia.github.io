@@ -1,39 +1,26 @@
 ---
-layout: post
-title: Flash Attention｜flash attention V1 V2 V3 V4 如何加速 attention
-categories: [Flash Attention]
-description: flash attention V1 V2 V3 V4 如何加速 attention
-keywords: Flash Attention
-mermaid: false
-sequence: false
-flow: false
-mathjax: false
-mindmap: false
-mindmap2: false
+span
 ---
-
 flash attention V1 V2 V3 V4 如何加速 attention，主要包括 flash attention V1 V2 V3 V4 的原理和实现，以及如何加速 attention 的方法。
-
 
 #! https://zhuanlan.zhihu.com/p/685020608
 
 # flash attention V1 V2 V3 V4 如何加速 attention
 
-## 1. flash attention V1 
+## 1. flash attention V1
 
 **论文**：FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness
 
 **链接**：https://arxiv.org/abs/2205.14135
 
-
 ### 1.1 Important
+
 - 为什么加快了计算？Fast
   - 降低了耗时的HBM访问次数。采用Tiling技术分块从HBM加载数据到SRAM进行融合计算。
 - 为什么节省了内存？Memory-Efficient
   - 不再对中间矩阵S，P进行存储。在反向的时候通过Recomputation重新计算来计算梯度。
 - 为什么是精准注意力？Exact Attention
   - 算法流程只是分块计算，无近似操作。
-
 
 ### 1.2 Motivation
 
@@ -53,25 +40,21 @@ Transformer 结构已成为自然语言处理和图像分类等应用中最常�
 
 flash attention v1从attention计算的GPU memory的read和write方面入手来提高attention计算的效率。其主要思想是通过切块（tiling）技术，来减少GPU HBM和GPU SRAM之间的数据读写操作。通过切块，flash attention1实现了在BERT-large（seq. length 512)上端到端15%的提速，在GPT-2（seq. length 1k)上3x的提速。具体数据可看flash attention 1的paper。
 
-
 NVIDIA GPU的显存架构，左图是以NVIDIA A100 40G显卡为例，我们常说的40G显存是其HBM memory（high bandwidth memory），其带宽是1.5~2.0TB/s，A100上还有一块192KB每108 SM (streaming multiprocessors) 的on-chip SRAM memory，其带宽是19TB/s。因此，如果能把涉及到显存的读写操作放在SRAM上，那将会极大的提升速度。
 
-
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/flash_attentionv1_01.png" style="margin-left: 0px" width="800px">
-
 
 #### Forward Standard Attention Implementation
 
 在注意力的一般实现中, 对 $\mathbf{Q}, \mathbf{K}, \mathbf{V} \in \mathbb{R}^{N \times d}$ 三个输入执行以下算法得到输出 $\mathbf{O}$, 其中softmax行级别执行。
+
 $$
 \mathbf{S}=\mathbf{Q} \mathbf{K}^{\top} \in \mathbb{R}^{N \times N}, \quad \mathbf{P}=\operatorname{softmax}(\mathbf{S}) \in \mathbb{R}^{N \times N}, \quad \mathbf{O}=\mathbf{P V} \in \mathbb{R}^{N \times d},
 $$
 
 在这个算法中, $\mathbf{S}, \mathbf{P}$ 矩阵都是很大, 需要在 HBM中实例化来进行存储, 这样就会带来很多HBM的访问次数, 最终体现到算法时间端到端较长的延迟。
 
-
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/flash_attentionv1_02.png" style="margin-left: 0px" width="800px">
-
 
 #### FlashAttention Implementation(Tiling)
 
@@ -81,9 +64,10 @@ $$
 
 为了让计算过程的结果完全在SRAM中, 摆脱对HBM的依赖, 可以采用分片操作, 每次进行部分计算, 确保这些计算结果能在SRAM内进行交互, 待得到对应的结果后再进行输出。
 
- <video src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/AttentionArch.mp4" width="100%" height="auto" autoplay loop muted></video>
+<video src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/AttentionArch.mp4" width="100%" height="auto" autoplay loop muted></video>
 
 这个过程中, 有一点需要注意的是, 之前对于softmax的计算是以行为单位的, 如下所示:
+
 $$
 m(x):=\max _i x_i, \quad f(x):=\left[\begin{array}{lll}
 e^{x_1-m(x)} & \ldots & e^{x_B-m(x)}
@@ -91,6 +75,7 @@ e^{x_1-m(x)} & \ldots & e^{x_B-m(x)}
 $$
 
 当我们将输入进行分片后，无法对完整的行数据执行Softmax操作。这是因为Softmax函数在计算时需要考虑整个行的数据。然而, 我们可以通过如下所示方法来获得与完整行Softmax相同的结果, 而无需使用近似操作。
+
 $$
 \begin{aligned}
 & m(x)=m\left(\left[x^{(1)} x^{(2)}\right]\right)=\max \left(m\left(x^{(1)}\right), m\left(x^{(2)}\right)\right), \quad f(x)=\left[e^{m\left(x^{(1)}\right)-m(x)} f\left(x^{(1)}\right) e^{m\left(x^{(2)}\right)-m(x)} f\left(x^{(2)}\right)\right], \\
@@ -116,6 +101,7 @@ $$
 由于我们将 $Q, K, V$ 都进行了分块计算, 而softmax 却是针对整个vector执行计算的, 因此在上图flash attention的计算流程的第 10 、
 11、12步中, 其使用了safe online softmax技术。
 $y=\operatorname{softmax}(x)$ 的定义为
+
 $$
 y_i=\frac{e^{x_i}}{\sum_{j=1}^V e^{x_j}}
 $$
@@ -133,6 +119,7 @@ $$
 上面是naive softmax的实现过程, 首先需要迭代计算分母的和, 然后再迭代计算vector中每一个值对应的softmax值。这个过程需要两次从内存读取和一次写回内存操作。
 
 但是naive softmax在实际的硬件上计算是有问题的, 在naive softmax的实现过程的第3步, 由于有指数操作, 会有数值溢出的情况, 因此在实际使用时, softmax都是使用safe softmax算法
+
 $$
 y_i=\frac{e^{x_i-\max _{k=1}^V x_k}}{\sum_{j=1}^V e^{x_j-\max _{k=1}^V x_k}}
 $$
@@ -346,8 +333,6 @@ def _fwd_kernel(
 
 ~~~
 
-
-
 ### 1.4 IO Complexity Analysis
 
 #### Standard Attention
@@ -367,31 +352,37 @@ def _fwd_kernel(
 对于FlashAttention, 我们设置一个分块大小 $B_c$ 来把 $\mathbf{K}, \mathbf{V}$ 分成 $T_c$ 块，对于 $\mathbf{Q}, \mathbf{O}$ 的每一块都要把 $\mathbf{K}, \mathbf{V}$ 部分的全部元素Load一遍，这样则有FlashAttention的内存访问复杂度为 $\Theta\left(N d+N d T_c\right)=\Theta\left(N d T_c\right)$.
 
 在这里, 我们需要两个分块大小, $\mathbf{Q}, \mathbf{O}$ 的分块大小 $B_r, \mathbf{K}, \mathbf{V}$ 的分块大小 $B_c$, 我们设定SRAM的大小为 $M$ , 为了能把分块后的 $\mathbf{K}, \mathbf{V} \in \mathbb{R}^{B_c \times d}$ 放进 $S R A M$, 那么则有一下限制:
+
 $$
 B_c d=O(M) \Leftrightarrow B_c=O\left(\frac{M}{d}\right)
 $$
 
 相应的， $\mathbf{Q}, \mathbf{O} \in \mathbb{R}^{B_r \times d}$ 有如下限制:
+
 $$
 B_r d=O(M) \Leftrightarrow B_r=O\left(\frac{M}{d}\right)
 $$
 
 最终, 还有一个中间态 $\mathbf{S}=\mathbf{Q} \mathbf{K}^{\top} \in \mathbb{R}^{B_r \times B_c}$ 需要存储, 则有如下限制:
+
 $$
 B_r B_c=O(M)
 $$
 
 综上, 限制如下
+
 $$
 B_c=\Theta\left(\frac{M}{d}\right), \quad B_r=\Theta\left(\min \left(\frac{M}{d}, \frac{M}{B_c}\right)\right)=\Theta\left(\min \left(\frac{M}{d}, d\right)\right)
 $$
 
 进而推出
+
 $$
 T_c=\frac{N}{B_c}=\Theta\left(\frac{N d}{M}\right)
 $$
 
 那么在 $M=\Theta(N d)$ 的前提下，则有FlashAttention的HBM内存访问复杂度为：
+
 $$
 \Theta\left(N d T_c\right)=\Theta\left(\frac{N^2 d^2}{M}\right)=\Theta(N d)
 $$
@@ -400,27 +391,19 @@ $$
 
 反向传播需要重新计算${P}$和${S}$，增加了运算量但是减少了HBM访问次数，仍旧快于标准attention。
 
-
-
-
 ## 2. flash attention V2
+
 **论文**：FlashAttention-2- Faster Attention with Better Parallelism and Work Partitioning
 
 **链接**：https://arxiv.org/abs/2307.08691
 
 在过去几年中，如何扩展Transformer使之能够处理更长的序列一直是一个重要问题，因为这能提高Transformer语言建模性能和高分辨率图像理解能力，以及解锁代码、音频和视频生成等新应用。然而增加序列长度，注意力层是主要瓶颈，因为它的运行时间和内存会随序列长度的增加呈二次（平方）增加。FlashAttention利用GPU非匀称的存储器层次结构，实现了显著的内存节省（从平方增加转为线性增加）和计算加速（提速2-4倍），而且计算结果保持一致。但是，FlashAttention仍然不如优化的矩阵乘法（GEMM）操作快，只达到理论最大FLOPs/s的25-40%。作者观察到，这种低效是由于GPU对不同thread blocks和warps工作分配不是最优的，造成了利用率低和不必要的共享内存读写。因此，本文提出了FlashAttention-2以解决这些问题。
 
-
-
 **本文主要贡献和创新点为：**
 
 - 减少了non-matmul FLOPs的数量（消除了原先频繁rescale）。虽然non-matmul FLOPs仅占总FLOPs的一小部分，但它们的执行时间较长，这是因为GPU有专用的矩阵乘法计算单元，其吞吐量高达非矩阵乘法吞吐量的16倍。因此，减少non-matmul FLOPs并尽可能多地执行matmul FLOPs非常重要。
-
 - 提出了在序列长度维度上并行化。该方法在输入序列很长（此时batch size通常很小）的情况下增加了GPU利用率。即使对于单个head，也在不同的thread block之间进行并行计算。
-
 - 在一个attention计算块内，将工作分配在一个thread block的不同warp上，以减少通信和共享内存读/写。
-
-
 
 **FlashAttention V1**
 
@@ -434,27 +417,20 @@ FlashAttention应用了tiling技术来减少内存访问，具体来说：
 
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/flash_attentionv2_02.png" style="margin-left: 0px" width="800px">
 
-
-
 **FlashAttention V2**
 
 - 先讲述FlashAttention-2对FlashAttention的改进，减少了非矩阵乘法运算（non-matmul）的FLOPs。
-
 - 然后说明如何将任务分配给不同的thread block进行并行计算，充分利用GPU资源。
-
 - 最后描述了如何在一个thread block内部分配任务给不同的warps，以减少访问共享内存次数。这些优化方案使得FlashAttention-2的性能提升了2-3倍。
-
-  
 
 ### 2.1 Algorithm
 
 FlashAttention在FlashAttention算法基础上进行了调整，减少了非矩阵乘法运算（non-matmul）的FLOPs。这是因为现代GPU有针对matmul（GEMM）专用的计算单元（如Nvidia GPU上的Tensor Cores），效率很高。以A100 GPU为例，其FP16/BF16矩阵乘法的最大理论吞吐量为312 TFLOPs/s，但FP32非矩阵乘法仅有19.5 TFLOPs/s，即每个no-matmul FLOP比mat-mul FLOP昂贵16倍。为了确保高吞吐量（例如超过最大理论TFLOPs/s的50％），我们希望尽可能将时间花在matmul FLOPs上。
 
-
-
 ### 2.2 Forward pass
 
 通常实现Softmax算子为了数值稳定性（因为指数增长太快, 数值会过大甚至溢出）, 会减去最大值:
+
 $$
 \operatorname{softmax}(x)=\frac{e^{x_i}}{\sum e^{x_j}}=\frac{e^{x_i-t_{\text {max }}}}{\sum e^{z_j-x_{\text {max }} x}}
 $$
@@ -464,22 +440,20 @@ $$
 为了减少non-matmul FLOPs, 本文在FlashAttention基础上做了两点改进:
 
 1. 在计算局部attention时, 先不考虑softmax的分母 $\sum e^{x_i}$, 即
-$\ell^{(i+1)}=e^{m^{(i)}-m^{(i+1)}} \ell^{(i)}+\operatorname{rowsum}\left(e^{\mathbf{S}^{(i+1)}-m^{(i+1)}}\right)$, 例如计算 $\mathbf{O}^{(1)}$ 时去除了 $\operatorname{diag}\left(\ell^{(1)}\right)^{-1}$
-    - FlashAttention: $\mathbf{O}^{(1)}=\tilde{\mathbf{P}}(1) \mathbf{V}^{(1)}=\operatorname{diag}\left(\ell^{(1)}\right)^{-1} e^{\mathbf{S}^{(1)}-m^{(1)}} \mathbf{V}^{(1)}$
-    - FlashAttention-2: $\mathbf{O}^{(1)}=e^{\mathbf{S}^{(1)}-m^{(1)}} \mathbf{V}^{(1)}$
+   $\ell^{(i+1)}=e^{m^{(i)}-m^{(i+1)}} \ell^{(i)}+\operatorname{rowsum}\left(e^{\mathbf{S}^{(i+1)}-m^{(i+1)}}\right)$, 例如计算 $\mathbf{O}^{(1)}$ 时去除了 $\operatorname{diag}\left(\ell^{(1)}\right)^{-1}$
 
+   - FlashAttention: $\mathbf{O}^{(1)}=\tilde{\mathbf{P}}(1) \mathbf{V}^{(1)}=\operatorname{diag}\left(\ell^{(1)}\right)^{-1} e^{\mathbf{S}^{(1)}-m^{(1)}} \mathbf{V}^{(1)}$
+   - FlashAttention-2: $\mathbf{O}^{(1)}=e^{\mathbf{S}^{(1)}-m^{(1)}} \mathbf{V}^{(1)}$
 2. 由于去除了 $\operatorname{diag}\left(\ell^{(i)}\right)^{-1}$, 更新 $\mathbf{O}^{(i+1)}$ 时不需要rescale $\ell^{(i)} / \ell^{(i+1)}$, 但是得弥补之前局部 max值, 例如示例中:
-    - FlashAttention: $\mathbf{O}^{(2)}=\operatorname{diag}\left(\ell^{(1)} / \ell^{(2)}\right)^{-1} \mathbf{O}^{(1)}+\operatorname{diag}\left(\ell^{(2)}\right)^{-1} e^{\mathbf{S}^{(2)}-m^{(2)}} \mathbf{V}^{(2)}$
-    - FlashAttention-2:
-    $\tilde{\mathbf{O}}^{(2)}=\operatorname{diag}\left(e^{m^{(1)}-m^{(2)}}\right) \tilde{\mathbf{O}}^{(1)}+e^{\mathbf{S}^{(2)}-m^{(2)}} \mathbf{V}^{(2)}=e^{s^{(1)}-m} \mathbf{V}^{(1)}+e^{s^{(2)}-m} \mathbf{V}^{(2)}$
 
+   - FlashAttention: $\mathbf{O}^{(2)}=\operatorname{diag}\left(\ell^{(1)} / \ell^{(2)}\right)^{-1} \mathbf{O}^{(1)}+\operatorname{diag}\left(\ell^{(2)}\right)^{-1} e^{\mathbf{S}^{(2)}-m^{(2)}} \mathbf{V}^{(2)}$
+   - FlashAttention-2:
+     $\tilde{\mathbf{O}}^{(2)}=\operatorname{diag}\left(e^{m^{(1)}-m^{(2)}}\right) \tilde{\mathbf{O}}^{(1)}+e^{\mathbf{S}^{(2)}-m^{(2)}} \mathbf{V}^{(2)}=e^{s^{(1)}-m} \mathbf{V}^{(1)}+e^{s^{(2)}-m} \mathbf{V}^{(2)}$
 3. 由于更新 $\mathbf{O}^{(i+1)}$ 未进行rescale, 最后一步时需要将 $\tilde{\mathbf{O}}^{(\text {last })}$ 乘以 $\operatorname{diag}\left(\ell^{(\text {last })}\right)^{-1}$ 来得到正确的输出, 例如示例中:
 
-    - FlashAttention-2: $\mathbf{O}=\operatorname{diag}\left(\ell^{(2)}\right)^{-1} \tilde{\mathbf{O}}^{(2)}$
+   - FlashAttention-2: $\mathbf{O}=\operatorname{diag}\left(\ell^{(2)}\right)^{-1} \tilde{\mathbf{O}}^{(2)}$
 
-**简单示例的FlashAttention完整计算步骤:** 
-
-
+**简单示例的FlashAttention完整计算步骤:**
 
 $$
 \begin{aligned} 
@@ -494,6 +468,7 @@ m^{(2)} & =\max \left(m^{(1)}, \operatorname{rowmax}\left(\mathbf{S}^{(2)}\right
 $$
 
 **FlashAttention-2的完整计算步骤:**
+
 $$
 \begin{aligned}
 m^{(1)} & =\operatorname{rowmax}\left(\mathbf{S}^{(1)}\right) \in \mathbb{R}^{B_r} \\
@@ -529,15 +504,11 @@ Forward pass. FlashAttention算法有两个循环，K V 在外循环 j，Q O在�
 
 上一节讨论了如何分配thread block，然而在每个thread block内部，我们也需要决定如何在不同的warp之间分配工作。我们通常在每个thread block中使用4或8个warp，如下图所示。
 
-
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/flash_attentionv2_06.png" style="margin-left: 0px" width="800px">
 
 **FlashAttention forward pass**. 如图所示，外循环对 K V 在输入序列 N上遍历，内循环对 Q 在 N 上遍历。对于每个block，FlashAttention将 K 和 V 分别分为4个warp，并且所有warp都可以访问 Q。K 的warp乘以 Q 得到 S 的一部分 ${S_{ij}}$，然后 ${S_{ij}}$ 经过局部 softmax后还需要乘以 V 的一部分得到 ${O_i}$。然而，每次外循环 j++ 都需要更新一遍  ${O_i}$（对上一次 ${O_i}$ 先rescale再加上当前值），这就导致每个warp需要从HBM频繁读写  ${O_i}$ 以累加出总结果。这种方式被称为“split-K”方案，是非常低效的，因为所有warp都需要从HBM频繁读写中间结果（ ${Q_i}$,  ${O_i}$,  ${m_i}$,  ${l_i}$）。
 
-**FlashAttention-2 forward pass**. 如图所示，FlashAttention-2将 Q 移到了外循环 i，K V移到了内循环 j，并将 Q 分为4个warp，所有warp都可以访问 K 和 V。这样做的好处是，原来 FlashAttention 每次内循环 i++ 会导致 ${O_i}$ 也变换（而 ${O_i}$ 需要通过HBM读写），现在每次内循环 j++ 处理的都是 ${O_i}$，此时 ${O_i}$​ 是存储在SRAM上的，代价远小于HBM。
-
-
-
+**FlashAttention-2 forward pass**. 如图所示，FlashAttention-2将 Q 移到了外循环 i，K V移到了内循环 j，并将 Q 分为4个warp，所有warp都可以访问 K 和 V。这样做的好处是，原来 FlashAttention 每次内循环 i++ 会导致 ${O_i}$ 也变换（而 ${O_i}$ 需要通过HBM读写），现在每次内循环 j++ 处理的都是 ${O_i}$，此时 ${O_i}$ 是存储在SRAM上的，代价远小于HBM。
 
 ## 3. flash attention V3
 
@@ -557,8 +528,6 @@ LLM inference（或称为decoding）是一个迭代的过程：预测的tokens�
 
 **因此，本文提出了Flash-Decoding，可以推理过程中显著加速attention操作（例如长序列生成速度提高8倍）。其主要思想是最大化并行加载keys和values的效率，通过重新缩放组合得到正确结果。**
 
-
-
 ### 3.2 Multi-head attention for decoding
 
 在decoding过程中，每个生成的新token需要与先前的tokens合并后，才能继续执行attention操作，即 ${softmax(Q \times K^T) \times V}$。Attention操作在训练过程的瓶颈主要卡在访问内存读写中间结果（例如 ${Q \times K^T}$）的带宽，相关加速方案可以参考FlashAttention V1和FlashAttention V2。
@@ -567,16 +536,13 @@ LLM inference（或称为decoding）是一个迭代的过程：预测的tokens�
 
 **从下图也可以看出，FlashAttention是按顺序更新output的，其实在看FlashAttention这篇文章时就觉得这个顺序操作可以优化的，因为反正都要rescale，不如最后统一rescale，没必要等之前block计算完（为了获取上一个block的max值）**
 
-
 <!-- <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/flash_attentionv3_01.gif" style="margin-left: 0px" width="800px"> -->
 
 <video src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/flash_attentionv3_01.mp4" width="100%" height="auto" autoplay loop muted></video>
 
-
 ### 3.3 A faster attention for decoding: Flash-Decoding
 
 上面提到FlashAttention对batch size和query length进行了并行化加速，Flash-Decoding在此基础上增加了一个新的并行化维度：keys/values的序列长度。即使batch size很小，但只要上下文足够长，它就可以充分利用GPU。与FlashAttention类似，Flash-Decoding几乎不用额外存储大量数据到全局内存中，从而减少了内存开销。
-
 
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/flash_attentionv3_02.gif" style="margin-left: 0px" width="800px">
 
@@ -589,8 +555,6 @@ LLM inference（或称为decoding）是一个迭代的过程：预测的tokens�
 实际应用中，第1步中的数据分块不涉及GPU操作（因为不需要在物理上分开），只需要对第2步和第3步执行单独的kernels。虽然最终的reduction操作会引入一些额外的计算，但在总体上，Flash-Decoding通过增加并行化的方式取得了更高的效率。
 
 **Flash-Decoding对LLM在GPU上inference进行了显著加速（尤其是batch size较小时），并且在处理长序列时具有更好的可扩展性。**
-
-
 
 ## 4. flash attention V4
 
@@ -622,7 +586,6 @@ LLM推理中的主要操作如下图所示：linear projection(①和⑤)、atte
 
 本文将LLM推理时对Prompt的处理过程称为prefill phase，第二阶段预测过程称为decode phase。这两个阶段的算子基本一致，主要是输入数据的shape是不同的。由于decode phase一次只处理一个令牌（batch size=1，或batch size很小），因此输入矩阵是flat-shape matrices（甚至是vectors），参见下图Decode phase部分中和KV Cache拼接的红色向量。
 
-
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/flash_attentionv4_01.png" style="margin-left: 0px" width="800px">
 
 LLM推理中的另一个问题就是Softmax算子，其需要计算并存储所有全局数据，并且数据量随着数据长度成平方增长，存在内存消耗高和低并行性等问题。
@@ -647,9 +610,10 @@ FlashAttention和FlashDecoding对softmax操作进行了分块处理，但是块�
 
 **Decoding阶段的过程主要由GEMV（batch size=1）或flat GEMM（batch size>1）。**
 
-GEMV/GEMM运算可以用 $M 、 N 、 K$ 来表示, 其中两个相乘矩阵的大小分别为 $M \times K$ 和 $K \times N$ 。一般 LLM推理引擎利用Tensor Core使用cuBLAS和CUTLASS等库来加速。尽管Tensor Core适合处理M $=8$​ 的GEMM, 但这些库为了隐藏memory latency, 通常将M维度平铺到64。然而, decode phase的GEMV或flat GEMM的M通远小于64, 于是填充0到64, 导致计算利用率低下。
+GEMV/GEMM运算可以用 $M 、 N 、 K$ 来表示, 其中两个相乘矩阵的大小分别为 $M \times K$ 和 $K \times N$ 。一般 LLM推理引擎利用Tensor Core使用cuBLAS和CUTLASS等库来加速。尽管Tensor Core适合处理M $=8$ 的GEMM, 但这些库为了隐藏memory latency, 通常将M维度平铺到64。然而, decode phase的GEMV或flat GEMM的M通远小于64, 于是填充0到64, 导致计算利用率低下。
 
 若假设 $N$ 维度上和 $K$ 维度上的tiling size分别为 $B_N$ 和 $B_K$, 那么每个GEMM tile的计算量为 $2 \times M \times B_N \times B_K$ （这里的2表示乘加2次）, 总共有 $B=\frac{N \times K}{B N \times B K}$ 个GEMM tiles。总内存访问量为 $\left(M \times B_K+B_N \times B_K\right) \times B+M \times N$ 。因此, 计算和内存比为:
+
 $$
 \begin{aligned}
 & \frac{2 \times M \times B_N \times B_K \times B}{\left(M \times B_K+B_N \times B_K\right) \times B+M \times N} \\
@@ -658,9 +622,9 @@ $$
 $$
 
 另一方面, tiling后的并行度是 $N / B_N$ 。于是发现了GEMV或falt GEMM两者矛盾之处：计算和内存比与 $B_N$ 正相关, 而并行度与 $B_N$ 负相关。**下图展示了 GEMM在不同 $B_N$ 和 $N$ 下的性能（归一化后)。本文总结了两个关键结论:**
+
 1. 当 $N$ 较小时, flat GEMM是parallelism-bounded。NVIDIA Tesla A100中有108个Streaming Multiprocessors (SMs), 于是应该将 $N / B_N$ 设置为一个相关的数 (128或256)。
 2. 当 $N$ 较大时, flat GEMM是memory-bounded。通过隐藏memory access latency可以提高性能。
-
 
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/flash_attentionv4_07.png" style="margin-left: 0px" width="800px">
 
@@ -677,4 +641,3 @@ $$
 **本文根据不同的 M, K, N 选取FastGEMV、flat GEMM（本文方法）、CUTLASS。**
 
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/flash_attentionv4_09.png" style="margin-left: 0px" width="800px">
-
