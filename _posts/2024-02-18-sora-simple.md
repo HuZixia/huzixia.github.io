@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Sora｜Sora 技术文档 — 简单版
+title: Sora｜Sora 技术报告
 categories: [Sora]
-description: Sora 技术文档 — 简单版
+description: Sora 技术报告
 keywords: Sora
 mermaid: false
 sequence: false

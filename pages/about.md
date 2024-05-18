@@ -23,7 +23,7 @@ Follow your heart, keep learning.
 {% endfor %}
 {% if site.url contains 'huzixia.github.io' %}
 <li>
-微信公众号：<br />
+微信公众号：AI Freedom <br />
 <img style="height:192px;width:192px;border:1px solid lightgrey;" src="{{ site.url }}/assets/images/qrcode.jpg" alt="AI Freedom" />
 </li>
 {% endif %}
