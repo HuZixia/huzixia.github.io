@@ -122,6 +122,7 @@ index:
         color: "#fff"
         # 首页导航栏文字颜色
         nav-color: "rgba(255, 255, 255, .5)"
+        font-weight: bold
         # 首页 banner 区背景颜色
         background-color: "#4183c4"
         # 首页 banner 区背景图片
