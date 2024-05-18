@@ -1,19 +1,48 @@
-- name: Software Engineer Keywords
+- name: Algorithm Engineer Keywords
   keywords:
-      - Java
-      - C++
-      - Python
-      - Design Patterns
+      - Recommendation Algorithm
+      - Recall
+      - Rank
+      - ReRank
+      - Fast2Vec
+      - Mind
+      - Swing
+      - XGBoost
+      - DeepFM
+      - MMoE
+      - PLE
+      - CEM
+      - ES
+      - RL
+      - MTL
 
-- name: Mobile Developer Keywords
+- name: Data Analyst Keywords
   keywords:
-      - Android
-      - Reverse Engineering
+      - DAU
+      - CTR
+      - Life Cycle
+      - Retain
+      - ARPU
+      - LTV
+      - ROI
 
-- name: Windows Developer Keywords
+- name: Large model Developer Keywords
   keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
+      - LangChain
+      - RAG
+      - AutoGPT
+      - Agent
+      - MetaGPT
+      - AgentScope
+      - Flask
+
+- name: Multimodal Algorithm Engineer Keywords
+  keywords:
+      - Finetune
+      - FlashAttention
+      - Lora
+      - Llama
+      - AE
+      - Diffusion Model
+      - Vit
+      - Dit

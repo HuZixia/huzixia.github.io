@@ -1,27 +1,15 @@
+- sitename: 知乎
+  name: RedHerring
+  url: https://www.zhihu.com/people/hu-zi-xia-91
+
+- sitename: 微信公众号
+  name: AI Freedom
+  url: https://mp.weixin.qq.com/s/7tMnB67P2q-7xaZqtnnH6A
+
 - sitename: GitHub
-  name: mzlogin
-  url: https://github.com/mzlogin
-
-- sitename: 掘金
-  name: mzlogin
-  url: http://gold.xitu.io/user/570ddaeb2e958a005c63b2da
-
-- sitename: LinkedIn
-  name: mazhuang
-  url: https://www.linkedin.com/in/mazhuang
+  name: HuZixia
+  url: https://github.com/HuZixia
 
 - sitename: 博客
-  name: 码志
-  url: http://mazhuang.org
-
-- sitename: 微博
-  name: mzlogin
-  url: http://weibo.com/mzlogin
-
-- sitename: 知乎
-  name: mzlogin
-  url: http://www.zhihu.com/people/mzlogin
-
-- sitename: 豆瓣
-  name: 闷骚的程序员
-  url: http://www.douban.com/people/freedim
+  name: huzixia
+  url: http://huzixia.github.io
