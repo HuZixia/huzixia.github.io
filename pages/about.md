@@ -12,7 +12,7 @@ permalink: /about/
 
 万年太久，只争朝夕，活在当下。
 
-Follow your heart, keep learning。
+Follow your heart, keep learning.
 
 ## 联系
 
@@ -41,6 +41,7 @@ Follow your heart, keep learning。
 {% endfor %}
 
 
+## 捐助
 
 做了一些微小的事情，如果对你有帮助，可以考虑请我喝杯咖啡。
 
