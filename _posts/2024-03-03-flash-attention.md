@@ -478,6 +478,9 @@ $\ell^{(i+1)}=e^{m^{(i)}-m^{(i+1)}} \ell^{(i)}+\operatorname{rowsum}\left(e^{\ma
     - FlashAttention-2: $\mathbf{O}=\operatorname{diag}\left(\ell^{(2)}\right)^{-1} \tilde{\mathbf{O}}^{(2)}$
 
 **简单示例的FlashAttention完整计算步骤:** 
+
+
+
 $$
 \begin{aligned} 
 m^{(1)} & =\operatorname{rowmax}\left(\mathbf{S}^{(1)}\right) \in \mathbb{R}^{B_r} \\
