@@ -4,9 +4,9 @@
 baseurl:
 url: https://huzixia.github.io
 date_format: "ordinal"
-title: 码志
-subtitle: "公众号：AI Freedom"
-description: "huzixia的个人博客，公众号：AI Freedom"
+title: HuZixia
+subtitle: "胡紫霞博客"
+description: "胡紫霞个人博客，公众号：AI Freedom"
 keywords: huzixia, AI Freedom
 timezone: Asia/China
 encoding: "utf-8"
@@ -28,7 +28,7 @@ components:
     # 不蒜子访问统计
     busuanzi:
         enabled: false
-        start_date: 2020-05-03
+        start_date: 2024-05-18
     # My Popular Repositories
     side_bar_repo:
         enabled: true
@@ -40,7 +40,7 @@ components:
     # 修改图片请替换 assets/images/qrcode.jpg
     qrcode:
         enabled: true
-        image_alt: 闷骚的程序员
+        image_alt: AI Freedom
     # 维基索引页使用哪种视图，支持 列表（list）/分类（cate）
     wiki:
         view: cate
@@ -62,7 +62,7 @@ organization:
 organization_url: 
 github_username: HuZixa
 location: Beijing, China
-email: huzixia2024@gmail.com
+email: zixiahu2024@gmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -152,15 +152,15 @@ collections:
     fragments:
         output: true
         permalink: /fragment/:path/
-#
-## ---------------- #
-##      Comments    #
-## ---------------- #
-## support provider: disqus, gitment, gitalk, utterances, beaudar, giscus
-#comments_provider: giscus
-## !!!重要!!! 请修改下面这些信息为你自己申请的
-## !!!Important!!! Please modify infos below to yours
-## disqus 配置参考：https://disqus.com
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk, utterances, beaudar, giscus
+comments_provider: giscus
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# disqus 配置参考：https://disqus.com
 #disqus:
 #    username:
 ## gitment 配置参考：https://imsun.net/posts/gitment-introduction/
@@ -182,14 +182,14 @@ collections:
 ## beaudar 配置参考：https://beaudar.lipk.org/
 #beaudar:
 #    repo: mzlogin/blog-comments
-## giscus 配置参考：https://giscus.app/zh-CN
-#giscus:
-#    repo: mzlogin/blog-comments
-#    repo-id: MDEwOlJlcG9zaXRvcnk5MzEyNzkxNw==
-#    category: Announcements
-#    category-id: DIC_kwDOBY0E7c4CRtg9
-## 在使用其它评论组件时可点击显示 Disqus
-#lazy_load_disqus : false
+# giscus 配置参考：https://giscus.app/zh-CN
+giscus:
+    repo: HuZixia/huzixia.github.io
+    repo-id: R_kgDOL9PdNA
+    category: Announcements
+    category-id: DIC_kwDOL9PdNM4Cfcue
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : false
 
 # ---------------- #
 #      Search      #
