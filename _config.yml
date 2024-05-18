@@ -87,12 +87,16 @@ navs:
     mobile-hidden: true
 
   -
-    href: /fragments/
-    label: 片段
+    href: /cv/
+    label: CV
 
-  -
-    href: /wiki/
-    label: 维基
+#  -
+#    href: /fragments/
+#    label: 片段
+
+#  -
+#    href: /wiki/
+#    label: 维基
 
   -
     href: /links/
