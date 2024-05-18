@@ -1,6 +1,6 @@
 - name: Algorithm Engineer Keywords
   keywords:
-      - Recommendation Algorithm
+      - Recommend
       - Recall
       - Rank
       - ReRank
@@ -43,6 +43,8 @@
       - Lora
       - Llama
       - AE
+      - CLIP
       - Diffusion Model
+      - DDPM
       - Vit
       - Dit

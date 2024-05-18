@@ -2,14 +2,10 @@
   name: RedHerring
   url: https://www.zhihu.com/people/hu-zi-xia-91
 
-- sitename: 微信公众号
-  name: AI Freedom
-  url: https://mp.weixin.qq.com/s/7tMnB67P2q-7xaZqtnnH6A
+- sitename: 博客
+  name: RedHerring
+  url: http://huzixia.github.io
 
 - sitename: GitHub
   name: HuZixia
   url: https://github.com/HuZixia
-
-- sitename: 博客
-  name: RedHerring
-  url: http://huzixia.github.io
