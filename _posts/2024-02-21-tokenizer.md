@@ -12,10 +12,11 @@ mindmap: false
 mindmap2: false
 ---
 
-技术大神 Andrej Karpathy 2月中旬刚离开 openai，这就上传了新课程，Let's build the GPT Tokenizer，点赞👍。 手把手构建一个GPT Tokenizer（分词器），还是熟悉的时长（足足2小时13分钟）。关于Tokenizer的Why和How，详见下文。
+Andrej Karpathy 的 Let's build the GPT Tokenizer。 手把手构建一个GPT Tokenizer（分词器）。关于Tokenizer的Why和How，详见下文。
 
 
 #! https://zhuanlan.zhihu.com/p/683276405
+
 **Andrej Karpathy 的 Let's build the GPT Tokenizer**
 
 技术大神 Andrej Karpathy 2月中旬刚离开 openai，这就上传了新课程，Let's build the GPT Tokenizer，点赞👍。
@@ -42,7 +43,7 @@ mindmap2: false
 
 
 
-## **How** 
+## How
 
 **github**: https://github.com/karpathy/minbpe.git
 
