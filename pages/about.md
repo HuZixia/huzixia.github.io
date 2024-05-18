@@ -42,17 +42,25 @@ Follow your heart, keep learning.
 {% endfor %}
 
 
-## 捐助
+[//]: # ()
+[//]: # ()
+[//]: # (## 捐助)
 
-做一些微小的事情，如果对你有帮助，可以考虑请我喝杯咖啡。
+[//]: # ()
+[//]: # (做一些微小的事情，如果对你有帮助，可以考虑请我喝杯咖啡。)
 
-Did some tiny things, consider buying me a cup of coffee if it helps you.
+[//]: # ()
+[//]: # (Did some tiny things, consider buying me a cup of coffee if it helps you.)
 
-## Wechat
+[//]: # ()
+[//]: # (## Wechat)
 
-<img style="width:256px;border:1px solid lightgrey;" src="{{ site.url }}/assets/images/receipt-code-wechat.jpg" alt="wechat receipt code" />
+[//]: # ()
+[//]: # (<img style="width:256px;border:1px solid lightgrey;" src="{{ site.url }}/assets/images/receipt-code-wechat.jpg" alt="wechat receipt code" />)
 
+[//]: # ()
+[//]: # ()
+[//]: # (## Alipay)
 
-## Alipay
-
-<img style="width:256px;border:1px solid lightgrey;" src="{{ site.url }}/assets/images/receipt-code-alipay.jpg" alt="alipay receipt code" />
+[//]: # ()
+[//]: # (<img style="width:256px;border:1px solid lightgrey;" src="{{ site.url }}/assets/images/receipt-code-alipay.jpg" alt="alipay receipt code" />)
