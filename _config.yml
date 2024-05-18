@@ -76,10 +76,10 @@ navs:
     href: /categories/
     label: 分类
 
-  -
-    href: /archives/
-    label: 归档
-    mobile-hidden: true
+#  -
+#    href: /archives/
+#    label: 归档
+#    mobile-hidden: true
 
   -
     href: /open-source/
@@ -98,10 +98,10 @@ navs:
 #    href: /wiki/
 #    label: 维基
 
-  -
-    href: /links/
-    label: 链接
-    mobile-hidden: true
+#  -
+#    href: /links/
+#    label: 链接
+#    mobile-hidden: true
 
   -
     href: /about/
