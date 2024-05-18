@@ -176,6 +176,7 @@ $$
 **具体的分块softmax代码演示**
 
 - **代码demo**
+
 ~~~python
 
 import torch
@@ -260,7 +261,6 @@ print(cur_sum)
 # tensor(1.7311)
 # tensor(1.)
 # tensor(1.7311)
-
 ~~~
 
 **代码实现**
