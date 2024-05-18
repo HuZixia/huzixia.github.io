@@ -86,27 +86,27 @@ navs:
     label: 开源
     mobile-hidden: true
 
-  -
-    href: /links/
-    label: 链接
-    mobile-hidden: true
-
-  -
-    href: /cv/
-    label: CV
-
 #  -
 #    href: /fragments/
 #    label: 片段
-
+#
 #  -
 #    href: /wiki/
 #    label: 维基
 
   -
+    href: /links/
+    label: 链接
+    mobile-hidden: true
+
+
+  -
+    href: /cv/
+    label: CV
+
+  -
     href: /about/
     label: 关于
-
 # ---------------- #
 #       RSS        #
 # ---------------- #
