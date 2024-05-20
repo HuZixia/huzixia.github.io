@@ -196,9 +196,6 @@ google:
         content_header: false
         content_footer: false
 
-params:
-  googleAnalytics: "G-WW6QSV38LN"
-
 
 markup:
   goldmark:
