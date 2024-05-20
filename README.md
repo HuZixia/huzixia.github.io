@@ -1,2 +1,2 @@
-# huzixia.github.io
-https://huzixia.github.io
+# huzixia.com
+https://huzixia.com
