@@ -1,15 +1,15 @@
+- sitename: 博客
+  name: huzixia
+  url: http://huzixia.github.io
+
 - sitename: 知乎
   name: RedHerring
   url: https://www.zhihu.com/people/hu-zi-xia-91
-
-- sitename: Twitter
-  name: Zixia Hu
-  url: https://x.com/zixia80631
 
 - sitename: GitHub
   name: HuZixia
   url: https://github.com/HuZixia
 
-- sitename: 博客
-  name: huzixia
-  url: http://huzixia.github.io
+- sitename: Twitter
+  name: Zixia Hu
+  url: https://x.com/zixia80631
