@@ -187,7 +187,7 @@ simple_jekyll_search:
 #      Google      #
 # ---------------- #
 google:
-    analytics_id: # G-20FLEG5Q2W
+    analytics_id: G-WW6QSV38LN
     adsense:
         enabled: false
         footer: false
@@ -196,7 +196,14 @@ google:
         content_header: false
         content_footer: false
 
+params:
+  googleAnalytics: "G-WW6QSV38LN"
+
+
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+
+
