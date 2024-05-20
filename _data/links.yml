@@ -6,7 +6,7 @@
   url: https://www.zhihu.com/people/hu-zi-xia-91
   src: life
 
-- name: POE
+- name: Poe
   url: https://poe.com
   src: www
 
@@ -38,7 +38,7 @@
   url: https://www.coze.com/home
   src: www
 
-- name: Copilot
-  url: https://copilot.microsoft.com/
+- name: Dify
+  url: https://dify.ai/
   src: www
 
