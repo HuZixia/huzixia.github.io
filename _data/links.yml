@@ -1,8 +1,8 @@
-- name: ReHerring
+- name: 博客-ReHerring
   url: http://huzixia.github.io
   src: life
 
-- name: ReHerring
+- name: 知乎-ReHerring
   url: https://www.zhihu.com/people/hu-zi-xia-91
   src: life
 
