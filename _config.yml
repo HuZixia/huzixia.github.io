@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://huzixia.com
+url: https://huzixia.github.io
 date_format: "ordinal"
 title: RedHerring
 subtitle: "公众号：AI Freedom"
