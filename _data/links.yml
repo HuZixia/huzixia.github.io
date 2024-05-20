@@ -6,4 +6,39 @@
   url: https://www.zhihu.com/people/hu-zi-xia-91
   src: life
 
+- name: POE
+  url: https://poe.com
+  src: www
+
+- name: ChatGPT
+  url: https://chatgpt.com
+  src: www
+
+- name: Gemini
+  url: https://gemini.google.com/app
+  src: www
+
+- name: Claude
+  url: https://claude.ai/chats
+  src: www
+
+- name: GroqChat
+  url: https://groq.com/
+  src: www
+
+- name: Replicate
+  url: https://replicate.com/
+  src: www
+
+- name: Copilot
+  url: https://copilot.microsoft.com/
+  src: www
+
+- name: Coze
+  url: https://www.coze.com/home
+  src: www
+
+- name: Copilot
+  url: https://copilot.microsoft.com/
+  src: www
 
