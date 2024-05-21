@@ -16,23 +16,21 @@ permalink: /cv/
 {% if site.url contains 'huzixia.github.io' %}
 <li>
 微信公众号：AI Freedom <br />
-<img style="height:192px;width:192px;border:1px solid lightgrey;" src="{{ site.url }}/assets/images/qrcode.jpg" alt="AI Freedom" />
 </li>
 {% endif %}
 </ul>
 
 
-# 胡紫霞
-
 ## 基本信息
 
+- **姓名：胡紫霞**
 - **教育经历：中国农业大学 985硕士**
-- **人工智能 — 大模型与AIGC高级能力提升证书**
 - **MetaGPT 代码贡献者**
-- **大数据分析师高级证书**
+- **人工智能 — 大模型与AIGC 高级证书**
+- **大数据分析师 高级证书**
 - **AI Agent Developer证书**
-- **动手学AI视频生成最佳视频奖**
-- **Multi-Agent for X AI创客松最佳人气奖**
+- **动手学 AI 视频生成 最佳视频奖**
+- **Multi-Agent for X AI创客松 最佳人气奖**
 
 
 
