@@ -25,20 +25,18 @@ permalink: /cv/
 - **教育：中国农业大学 985硕士**
 - **MetaGPT 代码贡献者**
 
-<hr style="border: none; border-top: 0.2px dashed grey;">
-
+---
 
 - **人工智能-大模型与AIGC 高级证书**
 - **大数据分析师 高级证书**
 - **AI Agent Developer证书**
 
-<hr style="border: none; border-top: 1px dashed grey;">
-
+---
 
 - **动手学 AI 视频生成 最佳视频奖**
 - **Multi-Agent for X AI创客松 最佳人气奖**
 
----
+
 
 
 ## 专业技能
