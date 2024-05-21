@@ -23,12 +23,12 @@ components:
     # 分享
     # weibo,qq,wechat,douban,qzone,linkedin,facebook,twitter
     share:
-        enabled: false
+        enabled: true
         hide-platforms: qq,facebook
     # 不蒜子访问统计
     busuanzi:
         enabled: true
-        start_date: 2024-05-20
+        start_date: 2024-05-18
     # My Popular Repositories
     side_bar_repo:
         enabled: true
