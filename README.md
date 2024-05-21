@@ -1,7 +1,7 @@
 # huzixia.github.io
 https://huzixia.github.io
 
-## :man_technologist: Hi 👋 there, I'm [huzixia!](https://huzixia.github.io/) <img height="30" src="images/work.gif" />
+## :man_technologist: Hi 👋 there, I'm [huzixia](https://huzixia.github.io/) <img height="30" src="images/work.gif" />
 
 Hi，您是第 ![Visitor Count](https://profile-counter.glitch.me/KawhiWei/count.svg) 位访问者！
 
