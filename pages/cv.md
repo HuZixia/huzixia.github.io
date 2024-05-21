@@ -22,7 +22,7 @@ permalink: /cv/
 ## 基本信息
 
 - **姓名：胡紫霞**
-- **教育经历：中国农业大学 985硕士**
+- **教育：中国农业大学 985硕士**
 - **MetaGPT 代码贡献者**
 
 <hr style="border: none; border-top: 1px dashed #000;">
