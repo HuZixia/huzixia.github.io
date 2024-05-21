@@ -11,12 +11,10 @@ permalink: /cv/
 
 <ul class="flex-container">
 {% for website in site.data.social %}
-<li>{{website.sitename }}：<a href="{{ website.url }}" target="_blank">@{{ website.name }}</a></li>
+<li>{{website.sitename }}：<a href="{{ website.url }}" target="_blank">{{ website.name }}</a></li>
 {% endfor %}
 {% if site.url contains 'huzixia.github.io' %}
-<li>
-微信公众号：AI Freedom <br />
-</li>
+<li>公众号：AI Freedom <br /></li>
 {% endif %}
 </ul>
 
