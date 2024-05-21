@@ -23,7 +23,7 @@ permalink: /cv/
 
 - **姓名：胡紫霞**
 - **教育：中国农业大学 985硕士**
-- **MetaGPT 代码贡献者**
+- **GitHub：MetaGPT 代码贡献者**
 
 ---
 
@@ -33,8 +33,8 @@ permalink: /cv/
 
 ---
 
-- **动手学 AI 视频生成 最佳视频奖**
 - **Multi-Agent for X AI创客松 最佳人气奖**
+- **动手学 AI 视频生成 最佳视频奖**
 
 
 
