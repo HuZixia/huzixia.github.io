@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 万年太久，只争朝夕，活在当下。
+keywords: huzixia
 comments: true
 menu: 关于
 permalink: /about/

@@ -10,6 +10,7 @@ flow: false
 mathjax: false
 mindmap: false
 mindmap2: false
+topmost: true
 ---
 
 谢赛宁认为"对于Sora这样的复杂系统，人才第一，数据第二，算力第三，其他都没有什么是不可替代的。" 所以数据的重要性不言而喻，而模型排在第三之后。sora 技术栈 from zero to hero：GAN、AE、DAE、VAE、VQVAE、CLIP、DALL·E、Diffusion Model、LDM、DDPM、Classifier Guided Diffusion、Classifier-Free Guidance、DALL·E 2、Vit、ViViT、MAE、NaViT、Dit 等方面。
