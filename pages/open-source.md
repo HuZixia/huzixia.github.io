@@ -51,4 +51,4 @@ permalink: /open-source/
 </section>
 {% endif %}
 
-Hi，您是第 ![Visitor Count](https://profile-counter.glitch.me/HuZixia/count.svg) 位访问者！
+Hi，您是第 ![Visitor Count](https://profile-counter.glitch.me/HuZixia/count.svg) 位访问者
