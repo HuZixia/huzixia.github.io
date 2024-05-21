@@ -24,3 +24,6 @@ permalink: /donate/
 ## 支付宝 / Alipay
 
 <img style="width:256px;border:1px solid lightgrey;" src="{{ assets_base_url }}/assets/images/receipt-code-alipay.jpg" alt="alipay receipt code" />
+
+
+Hi，您是第 ![Visitor Count](https://profile-counter.glitch.me/HuZixia/count.svg) 位访问者！
