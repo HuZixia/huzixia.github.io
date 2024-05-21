@@ -27,7 +27,7 @@ permalink: /cv/
 
 ---
 
-- **人工智能 — 大模型与AIGC 高级证书**
+- **人工智能-大模型与AIGC 高级证书**
 - **大数据分析师 高级证书**
 - **AI Agent Developer证书**
 
