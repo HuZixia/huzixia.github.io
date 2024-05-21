@@ -1,9 +1,12 @@
 # huzixia.github.io
 https://huzixia.github.io
 
-本仓库代码依照 Apache-2.0 协议开源。转载请注明出处。
-未经许可，严禁商用。
+## :man_technologist: Hi 👋 there, I'm [huzixia!](https://huzixia.github.io/) <img height="30" src="images/work.gif" />
 
-<p align="center"> 
-  Hello，您是第  <img src="https://profile-counter.glitch.me/HuZixia/count.svg" />位访问者
-</p>
+Hi，您是第 ![Visitor Count](https://profile-counter.glitch.me/KawhiWei/count.svg) 位访问者！
+
+本仓库代码依照 Apache-2.0 协议开源。
+
+转载文章请注明出处。
+
+未经许可，严禁商用。
