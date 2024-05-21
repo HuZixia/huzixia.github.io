@@ -11,7 +11,7 @@ permalink: /cv/
 
 <ul class="flex-container">
 {% for website in site.data.social %}
-<li>{{website.sitename }} <a href="{{ website.url }}" target="_blank">{{ website.name }}</a></li>
+<li>{{website.sitename }}：<a href="{{ website.url }}" target="_blank">{{ website.name }}</a></li>
 {% endfor %}
 {% if site.url contains 'huzixia.github.io' %}
 <li>公众号 AI Freedom <br /></li>
@@ -25,19 +25,20 @@ permalink: /cv/
 - **教育经历：中国农业大学 985硕士**
 - **MetaGPT 代码贡献者**
 
----
+<hr style="border: none; border-top: 1px dashed #000;">
+
 
 - **人工智能-大模型与AIGC 高级证书**
 - **大数据分析师 高级证书**
 - **AI Agent Developer证书**
 
----
+<hr style="border: none; border-top: 1px dashed #000;">
 
 
 - **动手学 AI 视频生成 最佳视频奖**
 - **Multi-Agent for X AI创客松 最佳人气奖**
 
-
+---
 
 
 ## 专业技能
