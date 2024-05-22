@@ -41,7 +41,7 @@ permalink: /cv/
 
 ---
 
-- **高级证书：** 人工智能 — 大模型与AIGC
+- **高级证书：** 人工智能—大模型与AIGC
 - **开发证书：** AI Agent Developer
 - **高级证书：** 大数据分析师
 
@@ -68,7 +68,7 @@ permalink: /cv/
 
 
 
-## **工作经验**
+## **工作经历**
 
 
 <div style="display: flex; justify-content: space-between;">
