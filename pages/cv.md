@@ -41,7 +41,7 @@ permalink: /cv/
 
 ---
 
-- **高级证书：** 人工智能-大模型与AIGC
+- **高级证书：** 人工智能 — 大模型与AIGC
 - **开发证书：** AI Agent Developer
 - **高级证书：** 大数据分析师
 
@@ -49,7 +49,7 @@ permalink: /cv/
 
 - **最佳人气奖：** Multi-Agent for X AI创客松
 - **最佳视频奖：** 动手学 AI 视频生成
-- **企业绩效：** 多次 荣获企业年度 A级 绩效奖
+- **企业荣誉：** 多次 荣获企业年度 A级 绩效奖
 - **学校荣誉：** 多次 荣获国家奖学金、国家励志奖学金等
 
 
@@ -88,6 +88,16 @@ permalink: /cv/
 - 店长直聘，数据分析，推荐算法
 - BOSS直聘，数据分析，推荐算法
 - 蓝交付，数据分析，推荐算法
+
+
+<div style="display: flex; justify-content: space-between;">
+    <p><strong>算法工程师 — 必要科技有限公司</strong></p> 
+    <p><strong>2016 — 2018</strong></p>
+</div>
+
+- 推荐系统
+- 数据分析
+- 用户画像
 
 
 
