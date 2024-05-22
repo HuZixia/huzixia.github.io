@@ -47,16 +47,22 @@ permalink: /cv/
 {% endfor %}
 
 
-{% for base in site.data.base %}
-### {{ base.name }}
-<div class="panel-title">
-{% for base in base.keywords %}
-<button class="btn btn-default" type="button">{{ base }}</button>
-{% endfor %}
+
+{% if site.skill_software_keywords %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Software Engineer Keywords</h3>
+    </div>
+    <div class="panel-body">
+        {% for keyword in site.skill_software_keywords %}
+        <button class="btn btn-default" type="button">{{ keyword }}</button>
+        {% endfor %}
+    </div>
 </div>
-{% endfor %}
+{% endif %}
 
 
+{% for base in site.data.base %}
 <div class="panel panel-default">
     <div class="panel-heading">
         <h3 class="panel-title">身份</h3>
@@ -70,20 +76,6 @@ permalink: /cv/
 {% endif %}
 
 
-
-<h2>Skill Keywords</h2>
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Software Engineer Keywords</h3>
-    </div>
-    <div class="panel-body">
-        {% for keyword in site.skill_software_keywords %}
-        <button class="btn btn-default" type="button">{{ keyword }}</button>
-        {% endfor %}
-    </div>
-</div>
-{% endif %}
 
 
 ## **专业技能**
