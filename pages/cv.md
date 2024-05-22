@@ -47,6 +47,16 @@ permalink: /cv/
 {% endfor %}
 
 
+{% for base in site.data.base %}
+### {{ base.name }}
+<div class="panel-title">
+{% for base in base.keywords %}
+<button class="btn btn-default" type="button">{{ base }}</button>
+{% endfor %}
+</div>
+{% endfor %}
+
+
 <div class="panel panel-default">
     <div class="panel-heading">
         <h3 class="panel-title">身份</h3>
