@@ -47,11 +47,25 @@ permalink: /cv/
 {% endfor %}
 
 
+{% if site.skill_software_keywords %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Software Engineer Keywords</h3>
+    </div>
+    <div class="panel-body">
+        {% for keyword in site.skill_software_keywords %}
+        <button class="btn btn-default" type="button">{{ keyword }}</button>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+
 ## **专业技能**
 
 
 {% for cv in site.data.cv %}
-### {{ skill.name }}
+### {{ cv.name }}
 <div class="btn-inline">
 {% for cv in cv.keywords %}
 <button class="btn btn-outline" type="button">{{ cv }}</button>
@@ -59,38 +73,39 @@ permalink: /cv/
 </div>
 {% endfor %}
 
-### 算法工程师
-
-### 数据分析师
-
-### 多模态算法工程师
-
-### 大模型开发工程师
 
 
 ## **工作经验**
 
-<div style="display: flex; justify-content: space-between;">
-    <h3>算法工程师 — 北京华品博睿网络技术有限公司</h3> <span style="text-align: right">2018 — 2023</span>
-</div>
 
 <div style="display: flex; justify-content: space-between;">
-    <p>算法工程师 — 北京华品博睿网络技术有限公司</p> 
-    <p>2018 — 2023</p>
+    <p><strong>算法工程师 — 北京海纳金川科技有限公司</strong></p> 
+    <p><strong>2023 — 2024</strong></p>
 </div>
+
+- 大模型开发，多模态大模型算法
+
+
+
+<div style="display: flex; justify-content: space-between;">
+    <p><strong>算法工程师 — 北京华品博睿网络技术有限公司</strong></p> 
+    <p><strong>2018 — 2023</strong></p>
+</div>
+
 - 店长直聘，数据分析，推荐算法
 - BOSS直聘，数据分析，推荐算法
 - 蓝交付，数据分析，推荐算法
 
 
 
-<div style="display: flex; justify-content: space-between;">
-    <h3>算法工程师 — 北京海纳金川科技有限公司</h3> <span style="text-align: right">2023 — 2024</span>
-</div>
-- 大模型开发，多模态大模型算法
-
-
 ## **项目经历**
+
+
+### 多模态大模型
+
+
+### 大模型开发
+
 
 ### 推荐算法，召回、粗排、精排、重排
 
@@ -107,12 +122,8 @@ permalink: /cv/
 - **商业增长：** 商业增长
 
 
-### 多模态大模型
-
-
-### 大模型开发
 
 
 
 
-[//]: # (<a href="https://info.flagcounter.com/tYM6"><img src="https://s11.flagcounter.com/count2/tYM6/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>)
+
