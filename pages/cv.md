@@ -13,6 +13,8 @@ permalink: /cv/
 
 :woman_technologist: <strong>Hi 👋 there, I'm</strong> <strong><a href="https://huzixia.github.io/">huzixia</a></strong> <img height="30" src="../images/work.gif" />
 
+<div>&nbsp;</div>
+
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
     <a href="https://huzixia.github.io/">
@@ -34,17 +36,19 @@ permalink: /cv/
 
 ## **基本信息**
 
+<hr style="border-top: 3px solid black;">
+
 - **姓名：胡紫霞**
 - **教育：中国农业大学 985硕士**
 - **Code：MetaGPT 代码贡献者**
 
----
+<hr style="border-top: 1px solid black;">
 
 - **人工智能-大模型与AIGC 高级证书**
 - **AI Agent Developer 开发证书**
 - **大数据分析师 高级证书**
 
----
+<hr style="border-top: 1px solid black;">
 
 - **Multi-Agent for X AI创客松 最佳人气奖**
 - **动手学 AI 视频生成 最佳视频奖**
@@ -78,6 +82,11 @@ permalink: /cv/
 
 <div style="display: flex; justify-content: space-between;">
     <h3>算法工程师 — 北京华品博睿网络技术有限公司</h3> <span style="text-align: right">2018 — 2023</span>
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+    <p>算法工程师 — 北京华品博睿网络技术有限公司</p> 
+    <p>2018 — 2023</p>
 </div>
 - 店长直聘，数据分析，推荐算法
 - BOSS直聘，数据分析，推荐算法
