@@ -9,14 +9,26 @@ permalink: /cv/
 ---
 
 
-<ul class="flex-container">
-{% for website in site.data.social %}
-<li>{{website.sitename }}：<a href="{{ website.url }}" target="_blank">{{ website.name }}</a></li>
-{% endfor %}
-{% if site.url contains 'huzixia.github.io' %}
-<li>公众号：AI Freedom <br /></li>
-{% endif %}
-</ul>
+<div align="center">
+
+## :man_technologist: Hi 👋 there, I'm [huzixia](https://huzixia.github.io/) <img height="30" src="../images/work.gif" />
+
+  <!-- dynamic typing effect 动态打字效果 -->
+  <div>
+    <a href="https://huzixia.github.io/">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=console.log(%22Hello%2C%20World%22);胡同学祝您心想事成!&center=true&size=27" />
+    </a>
+  </div>
+  <!-- profile logo 个人资料徽标 -->
+  <div>
+    <a href="https://huzixia.github.io/"><img src="https://img.shields.io/badge/Website-博客-orange" /></a>&emsp;
+    <a href="https://www.zhihu.com/people/hu-zi-xia-91"><img src="https://img.shields.io/badge/ZhiHu-知乎-blue" /></a>&emsp;
+    <a href="https://twitter.com/zixia80631/"><img src="https://img.shields.io/badge/Twitter-推特-black" /></a>&emsp;
+    <a href="https://github.com/HuZixia/Text2Video/assets/38995480/244e64be-3dc4-46bb-8aff-523d8a235a1e"><img src="https://img.shields.io/badge/WeChat-微信-07c160" /></a>&emsp;
+
+  </div>
+
+</div>
 
 
 ## 基本信息
@@ -28,15 +40,15 @@ permalink: /cv/
 ---
 
 - **人工智能-大模型与AIGC 高级证书**
+- **AI Agent Developer 开发证书**
 - **大数据分析师 高级证书**
-- **AI Agent Developer证书**
 
 ---
 
 - **Multi-Agent for X AI创客松 最佳人气奖**
 - **动手学 AI 视频生成 最佳视频奖**
 - **多次 荣获企业年度 A级 绩效奖**
-- **多次 荣获国家奖学金 和 国家励志奖学金**
+- **多次 荣获国家奖学金、国家励志奖学金等**
 
 
 
