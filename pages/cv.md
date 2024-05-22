@@ -36,9 +36,6 @@ permalink: /cv/
 
 ## **基本信息**
 
-
-## **基本信息**
-
 - **姓名：胡紫霞**
 - **教育：中国农业大学 985硕士**
 - **Code：MetaGPT 代码贡献者**
@@ -58,16 +55,25 @@ permalink: /cv/
 
 
 
-{% for base in site.data.base %}
-### {{ base.name }}
-<div class="btn-inline">
-{% for base in base.keywords %}
-<button class="btn btn-outline" type="button">{{ base }}</button>
-{% endfor %}
-</div>
-{% endfor %}
+[//]: # ({% for base in site.data.base %})
+[//]: # (### {{ base.name }})
+[//]: # (<div class="btn-inline">)
+[//]: # ({% for base in base.keywords %})
+[//]: # (<button class="btn btn-outline" type="button">{{ base }}</button>)
+[//]: # ({% endfor %})
+[//]: # (</div>)
+[//]: # ({% endfor %})
+[//]: # ()
 
 
+{% for cv in site.data.cv %}
+### {{ cv.name }}
+<ul class="list-group">
+{% for cv in cv.keywords %}
+<li class="list-group-item">{{ cv }}</li>
+{% endfor %}
+</ul>
+{% endfor %}
 
 
 ## **专业技能**
