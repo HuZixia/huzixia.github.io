@@ -33,7 +33,7 @@ permalink: /cv/
 </div>
 
 
-## 基本信息
+## **基本信息**
 
 - **姓名：胡紫霞**
 - **教育：中国农业大学 985硕士**
@@ -54,7 +54,7 @@ permalink: /cv/
 
 
 
-## 专业技能
+## **专业技能**
 
 
 {% for skill in site.data.skills %}
@@ -75,7 +75,7 @@ permalink: /cv/
 ### 大模型开发工程师
 
 
-## 工作经验
+## **工作经验**
 
 <div style="display: flex; justify-content: space-between;">
     <h3>算法工程师 — 北京华品博睿网络技术有限公司</h3> <span style="text-align: right">2018 — 2023</span>
@@ -92,7 +92,7 @@ permalink: /cv/
 - 大模型开发，多模态大模型算法
 
 
-## 项目经历
+## **项目经历**
 
 ### 推荐算法，召回、粗排、精排、重排
 
