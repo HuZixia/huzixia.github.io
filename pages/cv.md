@@ -33,26 +33,42 @@ permalink: /cv/
 
 </div>
 
-## <span style="color:blue">基本信息</span>
+## 基本信息
 
-## **基本信息**
+## <span style="color:#ADD8E6">基本信息</span>
 
+- **姓名：胡紫霞**
+- **教育：中国农业大学 985硕士**
+- **Code：MetaGPT 代码贡献者**
 
-{% for base in site.data.base %}
-### {{ base.name }}
-<ul class="list-group">
-{% for info in base.keywords %}
-<li class="list-group-item">{{ info }}</li>
-{% endfor %}
-</ul>
-{% endfor %}
+---
+
+- **人工智能-大模型与AIGC 高级证书**
+- **AI Agent Developer 开发证书**
+- **大数据分析师 高级证书**
+
+---
+
+- **Multi-Agent for X AI创客松 最佳人气奖**
+- **动手学 AI 视频生成 最佳视频奖**
+- **多次 荣获企业年度 A级 绩效奖**
+- **多次 荣获国家奖学金、国家励志奖学金等**
+
+[//]: # ({% for base in site.data.base %})
+[//]: # (### {{ base.name }})
+[//]: # (<ul class="list-group">)
+[//]: # ({% for info in base.keywords %})
+[//]: # (<li class="list-group-item">{{ info }}</li>)
+[//]: # ({% endfor %})
+[//]: # (</ul>)
+[//]: # ({% endfor %})
 
 
 ## **专业技能**
 
 
 {% for cv in site.data.cv %}
-### {{ cv.name }}
+#### {{ cv.name }}
 <div class="btn-inline">
 {% for info in cv.keywords %}
 <button class="btn btn-outline" type="button">{{ info }}</button>
@@ -88,20 +104,25 @@ permalink: /cv/
 ## **项目经历**
 
 
-### 多模态大模型
+#### 多模态大模型
+
+- **微调：** 微调
+- **多模态：** 多模态
+
+#### 大模型开发
+
+- **RAG：** RAG
+- **Agent：** Agent
 
 
-### 大模型开发
-
-
-### 推荐算法，召回、粗排、精排、重排
+##### 推荐算法，召回、粗排、精排、重排
 
 - **召回：** 召回
 - **粗排：** 粗排
 - **精排：** 精排
 - **重排：** 重排
 
-### 数据分析，用户画像，用户行为，生命周期，商业增长
+##### 数据分析，用户画像，用户行为，生命周期，商业增长
 
 - **用户画像：** 用户画像
 - **用户行为：** 用户行为
