@@ -41,14 +41,14 @@ permalink: /cv/
 
 ---
 
-- **高级证书：** 人工智能—大模型与AIGC （工信部）
-- **高级证书：** 大数据分析师 （工信部）
-- **开发证书：** AI Agent Developer (MetaGPT & AgentScope)
+- **工信部：** 人工智能—大模型与AIGC 高级证书
+- **工信部：** 大数据分析师 高级证书
+- **Agent：** AI Agent Developer (MetaGPT & AgentScope)
 
 ---
 
-- **最佳人气奖：** Multi-Agent for X AI创客松 （阿里云 & 魔搭社区 & Datawhale）
-- **最佳视频奖：** 动手学 AI 视频生成 （Datawhale & 奇想星球）
+- **AI创客松：** Multi-Agent for X 最佳人气奖 （阿里云 & 魔搭社区 & Datawhale）
+- **开源社区：** 动手学 AI 视频生成 最佳视频奖 （Datawhale & 奇想星球）
 - **企业荣誉：** 多次 荣获企业年度 A级 绩效奖
 - **学校荣誉：** 多次 荣获国家奖学金、国家励志奖学金等
 
