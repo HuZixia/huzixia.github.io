@@ -13,7 +13,7 @@ permalink: /cv/
 
 [//]: # (:man_technologist: Hi 👋 there, I'm [huzixia]&#40;https://huzixia.github.io/&#41; <img height="30" src="../images/work.gif" />)
 
-:man_technologist: Hi 👋 there, I'm <a href="https://huzixia.github.io/">huzixia</a> <img height="30" src="../images/work.gif" />
+:woman_technologist: Hi 👋 there, I'm <a href="https://huzixia.github.io/">huzixia</a> <img height="30" src="../images/work.gif" />
 
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
