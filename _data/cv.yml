@@ -1,0 +1,51 @@
+- name: 多模态算法
+  keywords:
+      - Finetune
+      - FlashAttention
+      - Lora
+      - Llama
+      - AE
+      - CLIP
+      - Diffusion Model
+      - DDPM
+      - Vit
+      - Dit
+
+- name: 大模型开发
+  keywords:
+      - LangChain
+      - RAG
+      - AutoGPT
+      - Agent
+      - MetaGPT
+      - AgentScope
+      - Flask
+
+- name: 推荐算法
+  keywords:
+      - Recommend
+      - Recall
+      - Rank
+      - ReRank
+      - Fast2Vec
+      - Mind
+      - Swing
+      - XGBoost
+      - DeepFM
+      - MMoE
+      - PLE
+      - CEM
+      - ES
+      - RL
+      - MTL
+
+- name: 数据分析
+  keywords:
+      - DAU
+      - CTR
+      - Life Cycle
+      - Retain
+      - ARPU
+      - LTV
+      - ROI
+

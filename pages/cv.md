@@ -36,35 +36,25 @@ permalink: /cv/
 
 ## **基本信息**
 
-<hr style="border-top: 3px solid black;">
 
-- **姓名：胡紫霞**
-- **教育：中国农业大学 985硕士**
-- **Code：MetaGPT 代码贡献者**
-
-<hr style="border-top: 1px solid black;">
-
-- **人工智能-大模型与AIGC 高级证书**
-- **AI Agent Developer 开发证书**
-- **大数据分析师 高级证书**
-
-<hr style="border-top: 1px solid black;">
-
-- **Multi-Agent for X AI创客松 最佳人气奖**
-- **动手学 AI 视频生成 最佳视频奖**
-- **多次 荣获企业年度 A级 绩效奖**
-- **多次 荣获国家奖学金、国家励志奖学金等**
-
+{% for base in site.data.base %}
+### {{ base.name }}
+<div class="btn-inline">
+{% for base in base.keywords %}
+<button class="btn btn-outline" type="button">{{ base }}</button>
+{% endfor %}
+</div>
+{% endfor %}
 
 
 ## **专业技能**
 
 
-{% for skill in site.data.skills %}
+{% for cv in site.data.cv %}
 ### {{ skill.name }}
 <div class="btn-inline">
-{% for keyword in skill.keywords %}
-<button class="btn btn-outline" type="button">{{ keyword }}</button>
+{% for cv in cv.keywords %}
+<button class="btn btn-outline" type="button">{{ cv }}</button>
 {% endfor %}
 </div>
 {% endfor %}
