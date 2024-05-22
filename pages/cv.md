@@ -47,6 +47,23 @@ permalink: /cv/
 {% endfor %}
 
 
+{% for base in site.data.base %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">身份</h3>
+    </div>
+    <div class="panel-body">
+        {% for base in base.keywords %}
+        <button class="btn btn-default" type="button">{{ base }}</button>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+
+
+<h2>Skill Keywords</h2>
+
 {% if site.skill_software_keywords %}
 <div class="panel panel-default">
     <div class="panel-heading">
@@ -60,6 +77,44 @@ permalink: /cv/
 </div>
 {% endif %}
 
+{% if site.skill_j2ee_keywords %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">J2EE Developer Keywords</h3>
+    </div>
+    <div class="panel-body">
+        {% for keyword in site.skill_j2ee_keywords %}
+        <button class="btn btn-default" type="button">{{ keyword }}</button>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+{% if site.skill_mobile_app_keywords %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Mobile Developer Keywords</h3>
+    </div>
+    <div class="panel-body">
+        {% for keyword in site.skill_mobile_app_keywords %}
+        <button class="btn btn-default" type="button">{{ keyword }}</button>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+{% if site.skill_web_keywords %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Web Developer Keywords</h3>
+    </div>
+    <div class="panel-body">
+        {% for keyword in site.skill_web_keywords %}
+        <button class="btn btn-default" type="button">{{ keyword }}</button>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
 
 ## **专业技能**
 
