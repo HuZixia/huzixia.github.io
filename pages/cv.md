@@ -11,7 +11,7 @@ permalink: /cv/
 
 <div align="center">
 
-:woman_technologist: Hi 👋 there, I'm <a href="https://huzixia.github.io/">huzixia</a> <img height="30" src="../images/work.gif" />
+:woman_technologist: **Hi 👋 there, I'm** <strong><a href="https://huzixia.github.io/">huzixia</a></strong> <img height="30" src="../images/work.gif" />
 
   <!-- dynamic typing effect 动态打字效果 -->
   <div>
