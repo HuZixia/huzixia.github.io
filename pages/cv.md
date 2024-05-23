@@ -72,8 +72,8 @@ permalink: /cv/
 
 
 <div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;"><strong>算法工程师 — 北京海纳金川科技有限公司</strong></p> 
-    <p style="font-size: 20px;"><strong>2023 — 2024</strong></p>
+    <p style="font-size: 18px;"><strong>算法工程师 — 北京海纳金川科技有限公司</strong></p> 
+    <p style="font-size: 18px;"><strong>2023 — 2024</strong></p>
 </div>
 
 - 大模型开发，多模态大模型算法
@@ -81,8 +81,8 @@ permalink: /cv/
 
 
 <div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;"><strong>算法工程师 — 北京华品博睿网络技术有限公司</strong></p> 
-    <p style="font-size: 20px;"><strong>2018 — 2023</strong></p>
+    <p style="font-size: 18px;"><strong>算法工程师 — 北京华品博睿网络技术有限公司</strong></p> 
+    <p style="font-size: 18px;"><strong>2018 — 2023</strong></p>
 </div>
 
 - 店长直聘，数据分析，推荐算法
@@ -91,8 +91,8 @@ permalink: /cv/
 
 
 <div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;"><strong>算法工程师 — 必要科技有限公司</strong></p> 
-    <p style="font-size: 20px;"><strong>2016 — 2018</strong></p>
+    <p style="font-size: 18px;"><strong>算法工程师 — 必要科技有限公司</strong></p> 
+    <p style="font-size: 18px;"><strong>2016 — 2018</strong></p>
 </div>
 
 - 推荐系统
