@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: CV｜CV个人简介
+title: CV个人简介
 description: 个人简介
 keywords: CV, 推荐算法, 大模型微调
 comments: true

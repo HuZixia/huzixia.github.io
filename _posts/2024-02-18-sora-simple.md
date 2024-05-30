@@ -7,7 +7,7 @@ keywords: Sora
 mermaid: false
 sequence: false
 flow: false
-mathjax: false
+mathjax: true
 mindmap: false
 mindmap2: false
 ---
