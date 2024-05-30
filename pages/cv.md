@@ -1,12 +1,26 @@
+[//]: # (---)
+[//]: # (layout: page)
+[//]: # (title: CV)
+[//]: # (description: 个人简介)
+[//]: # (keywords: CV)
+[//]: # (comments: true)
+[//]: # (menu: CV)
+[//]: # (permalink: /cv/)
+[//]: # (---)
+
+
 ---
-layout: page
-title: CV
-description: 个人简介
-keywords: CV
-comments: true
-menu: CV
-permalink: /cv/
+layout: cv
+title: cv｜cv
+keywords: 推荐系统，多模态大模型，微调
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
+
 
 
 <div align="center">
@@ -197,7 +211,6 @@ permalink: /cv/
   - 推荐系统的优化显著提升了推荐的点击率和转化率，带动了平台的整体销售增长。
 
 - 这些工作，不仅提高了电商平台的推荐效果和用户体验，还帮助公司更好地理解用户需求，制定更精准的市场策略。
-
 
 
 ## **项目经历**
