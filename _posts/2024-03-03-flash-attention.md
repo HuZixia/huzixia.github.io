@@ -619,7 +619,7 @@ FlashAttention和FlashDecoding对softmax操作进行了分块处理，但是块�
 
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/flashAttention/flash_attentionv4_06.png" style="margin-left: 0px" width="800px">
 
-### **4.4 Flat GEMM Optimization with Double Buffering**
+### 4.4 Flat GEMM Optimization with Double Buffering
 
 **Decoding阶段的过程主要由GEMV（batch size=1）或flat GEMM（batch size>1）。**
 
