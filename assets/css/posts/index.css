@@ -12,6 +12,16 @@
     color: #999;
 }
 
+.post-directory-cv {
+    font-size: 14px;
+    background: #fff;
+    overflow: hidden;
+    width: 200px;
+    padding-bottom: 1em;
+    border: 1px solid #efefef;
+    color: #999;
+}
+
 .post-directory ul,
 .post-directory ol {
     padding-left: 1.5em;
