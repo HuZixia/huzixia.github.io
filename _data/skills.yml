@@ -4,7 +4,7 @@
       - Recall
       - Rank
       - ReRank
-      - Fast2Vec
+      - Item2Vec
       - Mind
       - Swing
       - XGBoost
