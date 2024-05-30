@@ -9,10 +9,43 @@
 [//]: # (---)
 
 
+[//]: # (---)
+
+[//]: # (layout: cv)
+
+[//]: # (title: cv｜cv)
+
+[//]: # (keywords: 推荐系统，多模态大模型，微调)
+
+[//]: # (mermaid: false)
+
+[//]: # (sequence: false)
+
+[//]: # (flow: false)
+
+[//]: # (mathjax: false)
+
+[//]: # (mindmap: false)
+
+[//]: # (mindmap2: false)
+
+[//]: # (description: 个人简介)
+
+[//]: # (comments: true)
+
+[//]: # (menu: CV)
+
+[//]: # (permalink: /cv/)
+
+[//]: # (---)
+
+
 ---
-layout: cv
-title: cv｜cv
-keywords: 推荐系统，多模态大模型，微调
+layout: post
+title: nanoGPT｜Andrej Karpathy 的 nanoGPT lecture demo 详解
+categories: [nanoGPT]
+description: nanoGPT Andrej Karpathy 的 nanoGPT lecture demo 详解
+keywords: nanoGPT
 mermaid: false
 sequence: false
 flow: false
