@@ -19,6 +19,10 @@ flow: false
 mathjax: false
 mindmap: false
 mindmap2: false
+description: 个人简介
+comments: true
+menu: CV
+permalink: /cv/
 ---
 
 
