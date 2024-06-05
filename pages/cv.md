@@ -49,8 +49,9 @@ mindmap2: false
 
 - **工信部：** 人工智能—大模型与AIGC 高级证书
 - **工信部：** 大数据分析师 高级证书
+- **MetaGPT：** AI Agent Developer 证书
+- **AgentScope：** AI Agent Developer 证书
 - **Microsoft：** AI Applied Skills 证书
-- **Agent：** AI Agent Developer (MetaGPT & AgentScope)
 
 ---
 
