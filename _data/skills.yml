@@ -22,9 +22,11 @@
       - CTR
       - Life Cycle
       - Retain
+      - GMV
       - ARPU
       - LTV
       - ROI
+      - Feature
 
 - name: Large model Developer Keywords
   keywords:
@@ -35,16 +37,24 @@
       - MetaGPT
       - AgentScope
       - Flask
+      - SWEBench
+      - SWEAgent
 
 - name: Multimodal Algorithm Engineer Keywords
   keywords:
       - Finetune
-      - FlashAttention
+      - P-Tuning
+      - Adapter
       - Lora
-      - Llama
-      - AE
+      - QLora
+      - MoELora
+      - RLHF
+      - FlashAttention
+      - Llama3
+      - VAE
       - CLIP
       - Diffusion Model
       - DDPM
+      - Latte
       - Vit
       - Dit
