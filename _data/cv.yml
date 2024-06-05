@@ -1,13 +1,19 @@
 - name: 多模态算法
   keywords:
       - Finetune
-      - FlashAttention
+      - P-Tuning
+      - Adapter
       - Lora
-      - Llama
-      - AE
+      - QLora
+      - MoELora
+      - RLHF
+      - FlashAttention
+      - Llama3
+      - VAE
       - CLIP
       - Diffusion Model
       - DDPM
+      - Latte
       - Vit
       - Dit
 
@@ -20,6 +26,9 @@
       - MetaGPT
       - AgentScope
       - Flask
+      - FastAPI
+      - SWEBench
+      - SWEAgent
 
 - name: 推荐算法
   keywords:
@@ -27,7 +36,11 @@
       - Recall
       - Rank
       - ReRank
-      - Fast2Vec
+      - MAP
+      - AUC
+      - GAUC
+      - TOPN
+      - Item2Vec
       - Mind
       - Swing
       - XGBoost
@@ -38,13 +51,23 @@
       - ES
       - RL
       - MTL
+      - PointWise
+      - PairWise
+      - Cascade Model
+      - Fusion model
 
 - name: 数据分析
   keywords:
+      - Sample
+      - Label
+      - Feature
+      - Correlation
+      - Monitor
       - DAU
       - CTR
       - Life Cycle
       - Retain
+      - GMV
       - ARPU
       - LTV
       - ROI

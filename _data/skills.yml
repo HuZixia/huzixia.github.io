@@ -4,6 +4,10 @@
       - Recall
       - Rank
       - ReRank
+      - MAP
+      - AUC
+      - GAUC
+      - TOPN
       - Item2Vec
       - Mind
       - Swing
@@ -15,9 +19,18 @@
       - ES
       - RL
       - MTL
+      - PointWise
+      - PairWise
+      - Cascade Model
+      - Fusion model
 
 - name: Data Analyst Keywords
   keywords:
+      - Sample
+      - Label
+      - Feature
+      - Correlation
+      - Monitor
       - DAU
       - CTR
       - Life Cycle
@@ -26,7 +39,6 @@
       - ARPU
       - LTV
       - ROI
-      - Feature
 
 - name: Large model Developer Keywords
   keywords:
