@@ -37,6 +37,7 @@
       - MetaGPT
       - AgentScope
       - Flask
+      - FastAPI
       - SWEBench
       - SWEAgent
 
