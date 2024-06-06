@@ -44,6 +44,7 @@ mindmap2: false
 - **姓名：** 胡紫霞
 - **教育：** 中国农业大学 985硕士
 - **Code：** MetaGPT 代码贡献者
+- **邮箱：** ZixiaHu@cau.edu.cn
 
 ---
 
