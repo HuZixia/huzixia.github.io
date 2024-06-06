@@ -143,7 +143,7 @@ mindmap2: false
     - 召回：设计和实现多种召回策略（Strategy、Item2Vec、Swing、Mind等），以提高推荐的覆盖率和多样性。 
     - 粗排：使用Xgboost和DeepFM等算法对召回结果进行粗排，保证推荐结果的质量。 
     - 精排：应用Xgboost、DeepFM、MMoE、PLE、TFRA、PointWise、PairWise、MTL等算法对粗排结果进行精细排序，进一步提升推荐的准确性。 
-    - 重排：采用MTL、SEM、RL、ES等技术对最终的推荐结果进行重排，优化用户体验和业务目标。
+    - 重排：采用MTL、CEM、ES、RL、级联模型、融合模型等技术对最终的推荐结果进行重排，优化用户体验和业务目标。
 
   - #### 样本体系 
     - 构建和管理大规模样本数据，确保数据的完整性和准确性。
