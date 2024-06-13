@@ -56,11 +56,22 @@ mindmap2: false
 
 ---
 
-- **工信部：** 人工智能—大模型与AIGC 高级证书
-- **工信部：** 大数据分析师 高级证书
-- **MetaGPT：** AI Agent Developer 证书
-- **AgentScope：** AI Agent Developer 证书
-- **Microsoft：** AI Applied Skills 证书
+
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 48%; line-height: 1.2; margin: 0;">
+    <p><strong>工信部：</strong>人工智能—大模型与AIGC 高级证书</p>
+    <p><strong>工信部：</strong>大数据分析师 高级证书</p>
+    <p><strong>英语：</strong>GRE, CET-6</p>
+  </div>
+  <div style="width: 48%;">
+    <p><strong>Agent：</strong>AI Agent Developer 证书</p>
+    <p><strong>Microsoft：</strong>AI Applied Skills 证书</p>
+    <p><strong>Code：</strong>MetaGPT 代码贡献者</p>
+  </div>
+</div>
+
+
 
 ---
 
