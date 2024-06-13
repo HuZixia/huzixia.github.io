@@ -42,7 +42,7 @@ mindmap2: false
 ## **基本信息**
 
 <div style="display: flex; justify-content: space-between;">
-  <div style="width: 48%;">
+  <div style="width: 48%; line-height: 1.2; margin: 0;">
     <p><strong>姓名：</strong>胡紫霞</p>
     <p><strong>电话：</strong>17600431688</p>
     <p><strong>英语：</strong>GRE, CET-6</p>
