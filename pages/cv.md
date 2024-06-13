@@ -71,17 +71,52 @@ mindmap2: false
 
 ---
 
-
 <div style="display: flex; justify-content: space-between;">
   <div style="line-height: 1.2; margin: 0;">
     <p><strong>AI创客松：</strong>Multi-Agent for X 最佳人气奖 （阿里云 & 魔搭社区 & Datawhale）</p>
     <p><strong>开源社区：</strong>动手学 AI 视频生成 最佳视频奖 （Datawhale & 奇想星球）</p>
     <p><strong>企业荣誉：</strong>多次 荣获企业年度 A级 绩效奖</p>
     <p><strong>学校荣誉：</strong>多次 荣获国家奖学金、国家励志奖学金等</p>
-
   </div>
 </div>
 
+
+
+## **教育信息**
+
+
+<div style="display: flex; justify-content: space-between;">
+    <p style="font-size: 20px;"><strong>中国农业大学 — 农学硕士 — 预防兽医学</strong></p> 
+    <p style="font-size: 20px;"><strong>2014 — 2016</strong></p>
+</div>
+
+
+
+<div style="display: flex; justify-content: space-between;">
+    <p style="font-size: 20px;"><strong>安徽农业大学 — 农学学士 — 动物医学</strong></p> 
+    <p style="font-size: 20px;"><strong>2010 — 2014</strong></p>
+</div>
+
+
+<div style="display: flex; justify-content: space-between;">
+    <p style="font-size: 20px;"><strong>安徽农业大学 — 管理学学士 — 财务管理</strong></p> 
+    <p style="font-size: 20px;"><strong>2010 — 2014</strong></p>
+</div>
+
+
+
+
+## **论文信息**
+
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="line-height: 1.2; margin: 0;">
+    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="https://zsyz.cbpt.cnki.net/WKB3/WebPublication/paperDigest.aspx?paperID=14d834e7-83e8-40e6-a6da-fde80707572a">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>
+    <p><strong>2017 — DRUG DELIVERY（IF: 6.8）：</strong><a href="https://www.tandfonline.com/doi/full/10.1080/10717544.2017.1284945">Sustained release ivermectin-loaded solid lipid dispersion for subcutaneous delivery: in vitro and in vivo evaluation</a></p>
+    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong><a href="https://zgdw.cbpt.cnki.net/WKD2/WebPublication/paperDigest.aspx?paperID=9885335d-bef2-482b-984d-21500d516f30">Preparation and trial application of yolk antibody of duck tembusu virus
+</a></p>
+  </div>
+</div>
 
 
 ---
