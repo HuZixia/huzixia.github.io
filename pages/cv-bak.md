@@ -41,44 +41,10 @@ mindmap2: false
 
 ## **基本信息**
 
-[//]: # (- **姓名：** 胡紫霞)
-[//]: # (- **教育：** 中国农业大学 985硕士)
-[//]: # (- **邮箱：** ZixiaHu@cau.edu.cn)
-[//]: # (- **Code：** MetaGPT 代码贡献者)
-
-<div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;">姓名：胡紫霞</p> 
-    <p style="font-size: 20px;">教育：中国农业大学 985硕士</p>
-</div>
-
-
-<div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;">电话：17600431688</p> 
-    <p style="font-size: 20px;">邮箱：ZixiaHu@cau.edu.cn</p>
-</div>
-
-
-<div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;">英语：GRE, CET-6</p> 
-    <p style="font-size: 20px;">Code: MetaGPT 代码贡献者</p>
-</div>
-
-
-
-<div style="display: flex; justify-content: space-between;">
-  <div style="width: 48%;">
-    <h3>左边一列</h3>
-    <p>这是左边一列的内容。</p>
-    <p>这是左边一列的更多内容。</p>
-  </div>
-  <div style="width: 48%;">
-    <h3>右边一列</h3>
-    <p>这是右边一列的内容。</p>
-    <p>这是右边一列的更多内容。</p>
-  </div>
-</div>
-
-
+- **姓名：** 胡紫霞
+- **教育：** 中国农业大学 985硕士
+- **邮箱：** ZixiaHu@cau.edu.cn
+- **Code：** MetaGPT 代码贡献者
 
 ---
 
