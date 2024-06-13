@@ -47,7 +47,7 @@ mindmap2: false
     <p><strong>电话：</strong>17600431688</p>
     <p><strong>英语：</strong>GRE, CET-6</p>
   </div>
-  <div style="width: 48%;">
+  <div style="width: 48%; line-height: 1.2; margin: 0;">
     <p><strong>教育：</strong>中国农业大学 985硕士</p>
     <p><strong>邮箱：</strong>ZixiaHu@cau.edu.cn</p>
     <p><strong>Code：</strong>MetaGPT 代码贡献者</p>
@@ -57,6 +57,21 @@ mindmap2: false
 ---
 
 
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 48%; line-height: 1.2; margin: 0;">
+    <p><strong>工信部：</strong>人工智能—大模型与AIGC 高级证书</p>
+    <p><strong>工信部：</strong>大数据分析师 高级证书</p>
+  </div>
+  <div style="width: 48%; line-height: 1.2; margin: 0;">
+    <p><strong>Agent：</strong>AI Agent Developer 证书</p>
+    <p><strong>Microsoft：</strong>AI Applied Skills 证书</p>
+  </div>
+</div>
+
+
+
+---
+
 
 <div style="display: flex; justify-content: space-between;">
   <div style="width: 48%; line-height: 1.2; margin: 0;">
@@ -64,16 +79,9 @@ mindmap2: false
     <p><strong>工信部：</strong>大数据分析师 高级证书</p>
     <p><strong>英语：</strong>GRE, CET-6</p>
   </div>
-  <div style="width: 48%;">
-    <p><strong>Agent：</strong>AI Agent Developer 证书</p>
-    <p><strong>Microsoft：</strong>AI Applied Skills 证书</p>
-    <p><strong>Code：</strong>MetaGPT 代码贡献者</p>
-  </div>
 </div>
 
 
-
----
 
 - **AI创客松：** Multi-Agent for X 最佳人气奖 （阿里云 & 魔搭社区 & Datawhale）
 - **开源社区：** 动手学 AI 视频生成 最佳视频奖 （Datawhale & 奇想星球）
