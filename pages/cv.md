@@ -86,25 +86,24 @@ mindmap2: false
 
 
 <div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;"><strong>中国农业大学 — 农学硕士 — 预防兽医学</strong></p> 
-    <p style="font-size: 20px;"><strong>2014 — 2016</strong></p>
-</div>
-
-
-
-<div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;"><strong>安徽农业大学 — 农学学士 — 动物医学</strong></p> 
-    <p style="font-size: 20px;"><strong>2010 — 2014</strong></p>
+    <p><strong>中国农业大学</strong> — 农学硕士 — 预防兽医学</p> 
+    <p><strong>2014 — 2016</strong></p>
 </div>
 
 
 <div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;"><strong>安徽农业大学 — 管理学学士 — 财务管理</strong></p> 
-    <p style="font-size: 20px;"><strong>2010 — 2014</strong></p>
+    <p><strong>安徽农业大学</strong> — 农学学士 — 动物医学</p> 
+    <p><strong>2010 — 2014</strong></p>
 </div>
 
 
+<div style="display: flex; justify-content: space-between;">
+    <p><strong>安徽农业大学</strong> — 管理学学士 — 财务管理</p> 
+    <p><strong>2010 — 2014</strong></p>
+</div>
 
+
+---
 
 ## **论文信息**
 
