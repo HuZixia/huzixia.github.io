@@ -75,7 +75,7 @@ mindmap2: false
   <div style="line-height: 1.2; margin: 0;">
     <p><strong>AI创客松：</strong>Multi-Agent for X 最佳人气奖 （阿里云 & 魔搭社区 & Datawhale）</p>
     <p><strong>开源社区：</strong>动手学 AI 视频生成 最佳视频奖 （Datawhale & 奇想星球）</p>
-    <p><strong>企业荣誉：</strong>多次 荣获企业年度 A级 绩效奖、24薪资等</p>
+    <p><strong>企业荣誉：</strong>多次 荣获企业年度 A级 绩效奖、24薪等</p>
     <p><strong>学校荣誉：</strong>多次 荣获国家奖学金、国家励志奖学金等</p>
   </div>
 </div>
