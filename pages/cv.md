@@ -56,7 +56,6 @@ mindmap2: false
 
 ---
 
-
 <div style="display: flex; justify-content: space-between;">
   <div style="width: 48%; line-height: 1.2; margin: 0;">
     <p><strong>工信部：</strong>人工智能—大模型与AIGC 高级证书</p>
@@ -74,19 +73,16 @@ mindmap2: false
 
 
 <div style="display: flex; justify-content: space-between;">
-  <div style="width: 48%; line-height: 1.2; margin: 0;">
-    <p><strong>工信部：</strong>人工智能—大模型与AIGC 高级证书</p>
-    <p><strong>工信部：</strong>大数据分析师 高级证书</p>
-    <p><strong>英语：</strong>GRE, CET-6</p>
+  <div style="line-height: 1.2; margin: 0;">
+    <p><strong>AI创客松：</strong>Multi-Agent for X 最佳人气奖 （阿里云 & 魔搭社区 & Datawhale）</p>
+    <p><strong>开源社区：</strong>动手学 AI 视频生成 最佳视频奖 （Datawhale & 奇想星球）</p>
+    <p><strong>企业荣誉：</strong>多次 荣获企业年度 A级 绩效奖</p>
+    <p><strong>学校荣誉：</strong>多次 荣获国家奖学金、国家励志奖学金等</p>
+
   </div>
 </div>
 
 
-
-- **AI创客松：** Multi-Agent for X 最佳人气奖 （阿里云 & 魔搭社区 & Datawhale）
-- **开源社区：** 动手学 AI 视频生成 最佳视频奖 （Datawhale & 奇想星球）
-- **企业荣誉：** 多次 荣获企业年度 A级 绩效奖
-- **学校荣誉：** 多次 荣获国家奖学金、国家励志奖学金等
 
 ---
 
