@@ -81,7 +81,8 @@ mindmap2: false
 </div>
 
 ---
-&emsp;
+
+[//]: # (&emsp;)
 
 ## **教育信息**
 
