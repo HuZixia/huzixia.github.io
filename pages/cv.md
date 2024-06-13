@@ -125,6 +125,8 @@ mindmap2: false
 
 ## **专业技能**
 
+&emsp;
+
 
 {% for cv in site.data.cv %}
 #### {{ cv.name }}
