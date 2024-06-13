@@ -123,9 +123,9 @@ mindmap2: false
 ---
 
 
-## **专业技能**
+[//]: # (&emsp;)
 
-&emsp;
+## **专业技能**
 
 
 {% for cv in site.data.cv %}
