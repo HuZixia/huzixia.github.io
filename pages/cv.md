@@ -110,11 +110,15 @@ mindmap2: false
 ## **论文信息**
 
 
+[//]: # (    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="https://zsyz.cbpt.cnki.net/WKB3/WebPublication/paperDigest.aspx?paperID=14d834e7-83e8-40e6-a6da-fde80707572a">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>)
+[//]: # (    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong><a href="https://zgdw.cbpt.cnki.net/WKD2/WebPublication/paperDigest.aspx?paperID=9885335d-bef2-482b-984d-21500d516f30">Preparation and trial application of yolk antibody of duck tembusu virus)
+
+
 <div style="display: flex; justify-content: space-between;">
   <div style="line-height: 1.2; margin: 0;">
-    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="https://zsyz.cbpt.cnki.net/WKB3/WebPublication/paperDigest.aspx?paperID=14d834e7-83e8-40e6-a6da-fde80707572a">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>
+    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="https://kns.cnki.net/kcms2/article/abstract?v=l4t8J_Kk_A9X6OhUM8tSDF8NpltF8389XF9D1ZvtN04XBIzycNXB9PIODW51kLUKccZ2v643KZmjZ7T68yw1AfJpWeFaw4J-oe1ebOaJMABxJBD77e22NZxenxY5nC8gTNfQK06hbfeLhaZ4sJykEA==&uniplatform=NZKPT&language=CHS">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>
     <p><strong>2017 — DRUG DELIVERY（IF: 6.8）：</strong><a href="https://www.tandfonline.com/doi/full/10.1080/10717544.2017.1284945">Sustained release ivermectin-loaded solid lipid dispersion for subcutaneous delivery: in vitro and in vivo evaluation</a></p>
-    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong><a href="https://zgdw.cbpt.cnki.net/WKD2/WebPublication/paperDigest.aspx?paperID=9885335d-bef2-482b-984d-21500d516f30">Preparation and trial application of yolk antibody of duck tembusu virus
+    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong><a href="https://kns.cnki.net/kcms2/article/abstract?v=l4t8J_Kk_A_Hm80UHCnCwTiHLtH0H0pRXn5vYu6-D-GkBb3HatbTiQsWMSU2VAZp0cfd2CggjVO9K-wMSY5AjSeZoTIy-rvblO-hsGshAWG-reDVeEaFRe1dsrRj4e4XnChqD9J3VvE=&uniplatform=NZKPT&language=CHS">Preparation and trial application of yolk antibody of duck tembusu virus
 </a></p>
   </div>
 </div>
