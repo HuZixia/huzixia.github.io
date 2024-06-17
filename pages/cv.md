@@ -44,14 +44,15 @@ mindmap2: false
 <div style="display: flex; justify-content: space-between;">
   <div style="width: 48%; line-height: 1.2; margin: 0;">
     <p><strong>姓名：</strong>胡紫霞</p>
-    <p><strong>邮箱：</strong>ZixiaHu@cau.edu.cn</p>
+    <p><strong>电话：</strong>17600431688</p>
+    <p><strong>英语：</strong>GRE, CET-6</p>
   </div>
   <div style="width: 48%; line-height: 1.2; margin: 0;">
     <p><strong>教育：</strong>中国农业大学 985硕士</p>
+    <p><strong>邮箱：</strong>ZixiaHu@cau.edu.cn</p>
     <p><strong>Code：</strong>MetaGPT 代码贡献者</p>
   </div>
 </div>
-
 
 ---
 
@@ -67,6 +68,7 @@ mindmap2: false
 </div>
 
 
+
 ---
 
 <div style="display: flex; justify-content: space-between;">
@@ -78,8 +80,52 @@ mindmap2: false
   </div>
 </div>
 
+---
+
+[//]: # (&emsp;)
+
+## **教育信息**
+
+
+<div style="display: flex; justify-content: space-between;">
+    <p><strong>中国农业大学</strong> — 农学硕士 — 预防兽医学</p> 
+    <p><strong>2014 — 2016</strong></p>
+</div>
+
+
+<div style="display: flex; justify-content: space-between;">
+    <p><strong>安徽农业大学</strong> — 农学学士 — 动物医学</p> 
+    <p><strong>2010 — 2014</strong></p>
+</div>
+
+
+<div style="display: flex; justify-content: space-between;">
+    <p><strong>安徽农业大学</strong> — 管理学学士 — 财务管理</p> 
+    <p><strong>2010 — 2014</strong></p>
+</div>
+
 
 ---
+
+## **论文信息**
+
+
+[//]: # (    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="https://zsyz.cbpt.cnki.net/WKB3/WebPublication/paperDigest.aspx?paperID=14d834e7-83e8-40e6-a6da-fde80707572a">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>)
+[//]: # (    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong><a href="https://zgdw.cbpt.cnki.net/WKD2/WebPublication/paperDigest.aspx?paperID=9885335d-bef2-482b-984d-21500d516f30">Preparation and trial application of yolk antibody of duck tembusu virus)
+
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="line-height: 1.2; margin: 0;">
+    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="https://kns.cnki.net/kcms2/article/abstract?v=6RlcORkFSJTZqKQlc4bXGzDVxbOdy6Kj6UpbJqfOW_MCMGte9OznPsEA7l6r3ieFQG8rSJehEJZ7Yqp_y2DPyZQ2xOBZooFxesB230E2Ee_yLX917N1S_QZfm10ikln4pq9MQXAJwfk=&uniplatform=NZKPT&flag=copy">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>
+    <p><strong>2017 — DRUG DELIVERY（IF: 6.8）：</strong><a href="https://www.tandfonline.com/doi/full/10.1080/10717544.2017.1284945">Sustained release ivermectin-loaded solid lipid dispersion for subcutaneous delivery: in vitro and in vivo evaluation</a></p>
+    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong><a href="https://kns.cnki.net/kcms2/article/abstract?v=6RlcORkFSJTZqKQlc4bXGzDVxbOdy6Kj6UpbJqfOW_MCMGte9OznPsEA7l6r3ieFQG8rSJehEJZ7Yqp_y2DPyZQ2xOBZooFxesB230E2Ee_yLX917N1S_QZfm10ikln4pq9MQXAJwfk=&uniplatform=NZKPT&flag=copy">Preparation and trial application of yolk antibody of duck tembusu virus
+</a></p>
+  </div>
+</div>
+
+
+---
+
 
 [//]: # (&emsp;)
 
@@ -96,8 +142,6 @@ mindmap2: false
 {% endfor %}
 
 ---
-
-&emsp;
 
 
 ## **工作经历**
@@ -128,7 +172,7 @@ mindmap2: false
     - 迭代优化：根据用户反馈和测试结果，不断优化生成效果，提升生成内容的质量和多样性。
 
   - #### 自然专家系统
-    - 系统设计：基于多模态（文字、语音、图片、视频））输入和输出需求，设计自然专家系统的整体架构。
+    - 系统设计：基于多模态（文字、语音、图片、视频）输入和输出需求，设计自然专家系统的整体架构。
     - 功能模块：识别用户上传的图片，用文字语音视频多模态的方式反馈给用户；根据用户需求，多模态讲解内容；提供测试功能，检测用户对知识的掌握程度；支持用户互动和分享等。
 
   - #### 大模型微调
@@ -153,7 +197,7 @@ mindmap2: false
 
 
 - **S (Situation)**
-    - 在招聘平台工作期间，负责三大业务线：店长直聘、BOSS直聘、蓝交付。这些业务线的核心目标是通过智能推荐系统提升用户的招聘和求职体验。为了实现这一目标，我主导了标签体系、样本数据、特征工程、数据分析、推荐系统、监控体系等多个方面的工作。
+    - **在招聘平台工作期间，负责三大业务线：店长直聘、BOSS直聘、蓝交付。** 这些业务线的核心目标是通过智能推荐系统提升用户的招聘和求职体验。为了实现这一目标，我主导了标签体系、样本数据、特征工程、数据分析、推荐系统、监控体系等多个方面的工作。
 
 
 - **T (Task)**
@@ -229,3 +273,4 @@ mindmap2: false
   - 推荐系统的优化显著提升了推荐的点击率和转化率，带动了平台的整体销售增长。
 
 - 这些工作，不仅提高了电商平台的推荐效果和用户体验，还帮助公司更好地理解用户需求，制定更精准的市场策略。
+
