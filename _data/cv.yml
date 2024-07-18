@@ -11,6 +11,7 @@
       - P-Tuning
       - Adapter
       - Lora
+      - AdaLora
       - QLora
       - MoELora
       - RLHF
