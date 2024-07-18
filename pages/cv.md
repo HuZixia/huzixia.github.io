@@ -130,11 +130,15 @@ mindmap2: false
 #### 项目一：模型微调
 
 - **项目技术：** PEFT + ChatGLM + LLaMA + SFT + Lora + P-Tuning V2 + QLora + DeepSpeed 
-<br><br>
+<style>
+p {
+    margin-bottom: 2em; /* 或者使用其他值，根据需要调整 */
+}
+</style>
 - **项目简介：** 为了提升智能客服系统的响应效率和准确性，本项目针对用户数据进行大模型微调。通过应用LoRA、P-Tuning V2和QLora等微调技术，对ChatGLM和LLaMA模型进行优化，以更好地理解用户需求并提供精准回复。采用BLEU、准确率、召回率、F1值等指标评估模型微调的效果。并结合DeepSpeed进行性能优化，实现模型的高效训练和资源利用，最终提升用户满意度。
 <style>
 p {
-    margin-bottom: 1em; /* 或者使用其他值，根据需要调整 */
+    margin-bottom: 2em; /* 或者使用其他值，根据需要调整 */
 }
 </style>
 - **职责描述：**
@@ -146,14 +150,28 @@ p {
 
 #### 项目二：智能客服
 
-- **项目技术：** PEFT + ChatGLM + LLaMA + SFT + Lora + P-Tuning V2 + QLora + DeepSpeed 
+- **项目技术：** RAG + LangChain + Function Calling + Agent + Text Embedding + Chromadb + Hybrid Search + ChatGLM
 <style>
 p {
     margin-bottom: 2em; /* 或者使用其他值，根据需要调整 */
 }
 </style>
 - **项目简介：** 为了提升智能客服系统的响应效率和准确性，本项目针对用户数据进行大模型微调。通过应用LoRA、P-Tuning V2和QLora等微调技术，对ChatGLM和LLaMA模型进行优化，以更好地理解用户需求并提供精准回复。采用BLEU、准确率、召回率、F1值等指标评估模型微调的效果。并结合DeepSpeed进行性能优化，实现模型的高效训练和资源利用，最终提升用户满意度。
+<style>
+p {
+    margin-bottom: 2em; /* 或者使用其他值，根据需要调整 */
+}
+</style>
 - **职责描述：**
+
+
+
+[//]: # (PDF文档中的表哥如何处理：)
+[//]: # (1. 表格结构，CSV，Embedding)
+[//]: # (2. OCR，文字，Embedding)
+[//]: # (3. GPT-4V，描述，Embedding)
+[//]: # (4. 表格标题，Embedding)
+[//]: # (5. 多模态模型，CLIP/BLIP)
 
 
 
