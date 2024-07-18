@@ -128,14 +128,30 @@ mindmap2: false
 在科技平台工作期间，负责将大模型应用到实际项目中，包括大模型微调、智能客服、视频生成以及自然专家系统等。这些项目旨在提升平台的智能化水平、内容生成能力和用户体验。
 
 #### 项目一：模型微调
+
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="line-height: 1.2; margin: 0;">
+    <p><strong>项目技术：</strong>PEFT + ChatGLM + LLaMA + SFT + Lora + P-Tuning V2 + QLora + DeepSpeed </p>
+    <p><strong>项目简介：</strong>为了提升智能客服系统的响应效率和准确性，本项目针对用户数据进行大模型微调。通过应用LoRA、P-Tuning V2和QLora等微调技术，对ChatGLM和LLaMA模型进行优化，以更好地理解用户需求并提供精准回复。采用BLEU、准确率、召回率、F1值等指标评估模型微调的效果。并结合DeepSpeed进行性能优化，实现模型的高效训练和资源利用，最终提升用户满意度。</p>
+    <p><strong>职责描述：</strong></p>
+    <ul>
+      <li><strong>数据处理：</strong>收集和整理企业历史客服对话数据、用户行为数据和产品数据。对数据进行清洗和标注，确保数据质量和一致性，为模型训练提供高质量的输入数据。</li>
+      <li><strong>代码适配：</strong>根据项目需求，编写和调整代码，使其适应不同的微调技术（如LoRA、P-Tuning V2、QLora等）。优化代码结构和性能，确保在不同的硬件和软件环境中高效运行。</li>
+      <li><strong>模型微调：</strong>使用LoRA技术对ChatGLM和LLaMA模型进行微调，使其能够更好地处理特定的客服场景。结合P-Tuning V2和QLora技术，进一步提升模型在特定任务上的表现。</li>
+      <li><strong>模型评估：</strong>采用BLEU、准确率、召回率和F1值等多种评估指标，全面评估模型的性能。设计和执行一系列实验，评估不同微调和优化策略的效果。</li>
+      <li><strong>性能优化：</strong>使用DeepSpeed对模型进行优化，包括模型压缩和加速，提升模型的推理速度和资源利用效率。调整模型参数，控制模型复杂度，防止过拟合。</li>
+    </ul>
+  </div>
+</div>
+
+
 - **项目技术：** PEFT + ChatGLM + LLaMA + SFT + Lora + P-Tuning V2 + QLora + DeepSpeed 
 - **项目简介：** 为了提升智能客服系统的响应效率和准确性，本项目针对用户数据进行大模型微调。通过应用LoRA、P-Tuning V2和QLora等微调技术，对ChatGLM和LLaMA模型进行优化，以更好地理解用户需求并提供精准回复。采用BLEU、准确率、召回率、F1值等指标评估模型微调的效果。并结合DeepSpeed进行性能优化，实现模型的高效训练和资源利用，最终提升用户满意度。
 - **职责描述：**
-  - 数据处理
-  - 代码适配 
-  - 模型微调 
-  - 模型评估 
-  - 性能优化
+  - **数据处理：**
+  - **模型微调：**
+  - **模型评估：**
 
 
 
