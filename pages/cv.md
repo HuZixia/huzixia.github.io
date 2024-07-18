@@ -65,7 +65,7 @@ mindmap2: false
     <p><strong>电话：</strong>17600431688</p>
     <p><strong>微信：</strong>17600431688</p>
     <p><strong>邮箱：</strong>zixiahu2024@gmail.com</p>
-    <p><strong>Code：</strong>MetaGPT 代码贡献者</p>
+    <p><strong>代码：</strong>MetaGPT 代码贡献者</p>
     <p><strong>博客：</strong>https://huzixia.github.io</p>
   </div>
 </div>
@@ -97,7 +97,6 @@ mindmap2: false
 </div>
 
 
----
 
 [//]: # (&emsp;)
 
