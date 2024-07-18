@@ -150,35 +150,47 @@ p {
 
 #### 项目二：智能客服
 
-- **项目技术：** RAG + LangChain + Function Calling + Agent + Text Embedding + Chromadb + Hybrid Search + ChatGLM
+- **项目技术：** RAG + LangChain + Function Calling + Text Embedding + Chromadb + Hybrid Search + ChatGLM + GPT-4V
 <style>
 p {
     margin-bottom: 2em; /* 或者使用其他值，根据需要调整 */
 }
 </style>
-- **项目简介：** 为了提升智能客服系统的响应效率和准确性，本项目针对用户数据进行大模型微调。通过应用LoRA、P-Tuning V2和QLora等微调技术，对ChatGLM和LLaMA模型进行优化，以更好地理解用户需求并提供精准回复。采用BLEU、准确率、召回率、F1值等指标评估模型微调的效果。并结合DeepSpeed进行性能优化，实现模型的高效训练和资源利用，最终提升用户满意度。
+- **项目简介：** 为了提高用户体验和服务效率，本项目设计开发了一个基于大语言模型的智能客服系统。希望能够准确理解用户问题，并提供相关的解决方案和建议。通过构建一个包含常见问题答案、操作指南和服务流程的知识库，利用RAG技术，从知识库中检索相关信息，生成高质量的响应，结合Hybrid Search方法提高检索效率和准确性。此外，系统还具有实时监控和分析功能，以确保其稳定性和性能。
 <style>
 p {
     margin-bottom: 2em; /* 或者使用其他值，根据需要调整 */
 }
 </style>
 - **职责描述：**
+  - **系统设计：** 设计智能客服系统的整体架构，确保系统能够准确响应用户问题。包括选择和配置合适的大模型、设计系统模块和数据流，以及集成各种功能组件。
+  - **知识库构建：** 收集、整理和存储各种知识信息，包括常见问题答案、操作指南和服务流程等。确保知识库信息的准确性和及时更新。
+  - **RAG 集成：** 实现RAG技术，根据用户输入，通过向量检索模型和排序模型，从知识库获取参考答案。将用户输入和参考答案一起提供给大语言模型，生成最终回复。
+  - **表格处理：** 处理PDF文档中的表格信息，包括表格结构、表格标题、表格内容等。通过 OCR 技术提取表格信息，应用文本嵌入模型进行处理。采用GPT-4V API 做表格问答。利用GPT-4V生成表格/图像描述，并向量化用于检索等。
 
 
+[//]: # (向量检索模型)
+[//]: # (封装 OpenAI 的 Embedding 模型接口 text-embedding-ada-002)
 
-[//]: # (PDF文档中的表哥如何处理：)
+[//]: # (排序模型)
+[//]: # (from sentence_transformers import CrossEncoder)
+[//]: # (model = CrossEncoder&#40;'cross-encoder/ms-marco-MiniLM-L-6-v2', max_length=512&#41; # 英文，模型较小)
+[//]: # (model = CrossEncoder&#40;'BAAI/bge-reranker-large', max_length=512&#41; # 多语言，国产，模型较大)
+
+[//]: # (PDF文档中的表格如何处理：)
 [//]: # (1. 表格结构，CSV，Embedding)
 [//]: # (2. OCR，文字，Embedding)
 [//]: # (3. GPT-4V，描述，Embedding)
 [//]: # (4. 表格标题，Embedding)
 [//]: # (5. 多模态模型，CLIP/BLIP)
 
+[//]: # (微软开发的一个基于 Transformer 的模型，用于表格检测任务。该模型的主要作用是从图像中检测和识别表格结构。)
+[//]: # (from transformers import AutoModelForObjectDetection)
+[//]: # (# 加载 TableTransformer 模型)
+[//]: # (model = AutoModelForObjectDetection.from_pretrained&#40;)
+[//]: # (    "microsoft/table-transformer-detection")
+[//]: # (&#41;)
 
-
-- 系统设计：设计基于自然语言处理（NLP）和大语言模型的智能客服系统架构，确保系统能够准确响应用户问题。
-- 知识库：存储系统需要的各类知识和信息，包括常见问题答案、产品信息、操作指南、服务流程等。
-- RAG：根据用户输入，通过向量检索模型和排序模型，从知识库获取参考答案，将用户输入和参考答案一起提供给大语言模型，生成最终回复。
-- 监控分析：监控系统运行状态和性能指标，对系统进行实时分析和优化，提高系统的稳定性和性能。
 
 ---
 
