@@ -27,6 +27,7 @@
 - name: 大模型开发
   keywords:
       - LangChain
+      - Function Calling
       - RAG
       - AutoGPT
       - Agent
