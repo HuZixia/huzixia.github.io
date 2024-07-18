@@ -186,9 +186,7 @@ p {
 [//]: # (微软开发的一个基于 Transformer 的模型，用于表格检测任务。该模型的主要作用是从图像中检测和识别表格结构。)
 [//]: # (from transformers import AutoModelForObjectDetection)
 [//]: # (# 加载 TableTransformer 模型)
-[//]: # (model = AutoModelForObjectDetection.from_pretrained&#40;)
-[//]: # (    "microsoft/table-transformer-detection")
-[//]: # (&#41;)
+[//]: # (model = AutoModelForObjectDetection.from_pretrained&#40;"microsoft/table-transformer-detection"&#41;)
 
 
 ---
