@@ -41,7 +41,6 @@
 
 - name: 推荐算法
   keywords:
-      - Recommend
       - Recall
       - Rank
       - ReRank
