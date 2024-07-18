@@ -39,16 +39,34 @@ mindmap2: false
 
 </div>
 
-## **基本信息**
+
+## **求职意向**
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 48%; line-height: 1.2; margin: 0;">
+    <p><strong>岗位：</strong>算法工程师</p>
+  </div>
+  <div style="width: 48%; line-height: 1.2; margin: 0;">
+    <p><strong>坐标：</strong>北京</p>
+  </div>
+</div>
+
+## **个人资料**
 
 <div style="display: flex; justify-content: space-between;">
   <div style="width: 48%; line-height: 1.2; margin: 0;">
     <p><strong>姓名：</strong>胡紫霞</p>
-    <p><strong>邮箱：</strong>ZixiaHu@cau.edu.cn</p>
+    <p><strong>学校：</strong>中国农业大学</p>
+    <p><strong>学历：</strong>985 硕士</p>
+    <p><strong>英语：</strong>GRE, CET-6</p>
+    <p><strong>工龄：</strong>8年</p>
   </div>
   <div style="width: 48%; line-height: 1.2; margin: 0;">
-    <p><strong>教育：</strong>中国农业大学 985硕士</p>
+    <p><strong>电话：</strong>17600431688</p>
+    <p><strong>微信：</strong>17600431688</p>
+    <p><strong>邮箱：</strong>zixiahu2024@gmail.com</p>
     <p><strong>Code：</strong>MetaGPT 代码贡献者</p>
+    <p><strong>博客：</strong>https://huzixia.github.io</p>
   </div>
 </div>
 
