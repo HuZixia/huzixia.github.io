@@ -1,3 +1,10 @@
+- name: 编程语言
+  keywords:
+      - Python
+      - Scala
+      - Sql
+      - Java
+
 - name: 多模态算法
   keywords:
       - Finetune
@@ -8,14 +15,13 @@
       - MoELora
       - RLHF
       - FlashAttention
-      - Llama3
       - VAE
       - CLIP
       - Diffusion Model
-      - DDPM
-      - Latte
       - Vit
       - Dit
+      - TTS
+      - DeepSpeed
 
 - name: 大模型开发
   keywords:
@@ -29,6 +35,9 @@
       - FastAPI
       - SWEBench
       - SWEAgent
+      - 文生图
+      - 声音克隆
+      - 文字转语音
 
 - name: 推荐算法
   keywords:
@@ -38,23 +47,27 @@
       - ReRank
       - MAP
       - AUC
-      - GAUC
       - TOPN
       - Item2Vec
       - Mind
       - Swing
+      - U2U2I
+      - U2I2I
       - XGBoost
       - DeepFM
+      - ESMM
       - MMoE
       - PLE
       - CEM
       - ES
       - RL
       - MTL
+      - TFRA
+      - Focal Loss
       - PointWise
       - PairWise
-      - Cascade Model
-      - Fusion model
+      - 级联模型
+      - 融合模型
 
 - name: 数据分析
   keywords:
@@ -71,4 +84,7 @@
       - ARPU
       - LTV
       - ROI
+      - Hive
+      - Spark
+      - Flink
 
