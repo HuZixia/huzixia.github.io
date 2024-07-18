@@ -1,8 +1,9 @@
 - name: 编程语言
   keywords:
       - Python
-      - Scala
       - Sql
+      - Shell
+      - Scala
       - Java
 
 - name: 多模态算法

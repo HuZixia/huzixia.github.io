@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../PyCharm/lecture-notes-0718/14-fine-tuning-02/fine-tuning-lab" vcs="Git" />
   </component>
 </project>
