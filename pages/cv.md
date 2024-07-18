@@ -171,7 +171,7 @@ p {
 [//]: # (向量检索模型)
 [//]: # (封装 OpenAI 的 Embedding 模型接口 text-embedding-ada-002)
 
-[//]: # (排序模型)
+[//]: # (排序模型，信息检索重排序模型)
 [//]: # (from sentence_transformers import CrossEncoder)
 [//]: # (model = CrossEncoder&#40;'cross-encoder/ms-marco-MiniLM-L-6-v2', max_length=512&#41; # 英文，模型较小)
 [//]: # (model = CrossEncoder&#40;'BAAI/bge-reranker-large', max_length=512&#41; # 多语言，国产，模型较大)
