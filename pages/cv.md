@@ -51,6 +51,7 @@ mindmap2: false
   </div>
 </div>
 
+
 ## **基本信息**
 
 <div style="display: flex; justify-content: space-between;">
@@ -70,6 +71,7 @@ mindmap2: false
   </div>
 </div>
 
+---
 
 ## **专业证书**
 
@@ -112,7 +114,6 @@ mindmap2: false
 </div>
 {% endfor %}
 
----
 ---
 [//]: # (&emsp;)
 
