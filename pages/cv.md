@@ -292,7 +292,7 @@ p {
 
 #### 项目四：样本特征
 
-- **项目技术：** 
+- **项目技术：** Hive + Spark + Item2Vec Attr + Swing + Mind + U2U2I + U2I2I + UserCF + ItemCF + 策略召回
 - **项目简介：** 
 - **职责描述：**
 
