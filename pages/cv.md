@@ -277,9 +277,19 @@ p {
 
 #### 项目三：召回算法
 
-- **项目技术：** 
-- **项目简介：** 
+- **项目技术：** ALS SimItem + Content SimItem + Item2Vec Attr + Swing + Mind + U2U2I + U2I2I + UserCF + ItemCF + 策略召回
+- **项目简介：** 召回层的主要任务是从庞大的物品库中筛选出一个相对较小的候选物品集合。这一层主要关注广度，通过高效的检索算法迅速找到可能与用户相关的物品。
 - **职责描述：**
+  - **SimItem：**
+    - **ALS：** 
+    - **Content：** 
+    - **Item2Vec：** 
+    - **Swing：** 
+  - **向量召回：**
+  - **策略召回：**
+
+
+ALS：选择detail和add用户行为，根据userid, itemid，score用als计算相似职位
 
 ---
 
@@ -298,9 +308,6 @@ p {
 
 推荐算法 
     - 召回：设计和实现多种召回策略（Strategy、Item2Vec、Swing、Mind等），以提高推荐的覆盖率和多样性。 
-    - 粗排：使用Xgboost和DeepFM等算法对召回结果进行粗排，保证推荐结果的质量。 
-    - 精排：应用Xgboost、DeepFM、MMoE、PLE、TFRA、PointWise、PairWise、MTL等算法对粗排结果进行精细排序，进一步提升推荐的准确性。 
-    - 重排：采用MTL、CEM、ES、RL、级联模型、融合模型等技术对最终的推荐结果进行重排，优化用户体验和业务目标。
 
 样本体系 
     - 构建和管理大规模样本数据，确保数据的完整性和准确性。
