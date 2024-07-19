@@ -243,7 +243,7 @@ p {
 
 #### 项目二：排序算法
 
-- **项目技术：** 
+- **项目技术：** XGBoost + DeepFM + Focal Loss + PointWise + PairWise + MMoE + PLE + TFRA + AUC + MAP + TOPN
 - **项目简介：** 
 - **职责描述：**
 
