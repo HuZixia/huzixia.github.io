@@ -143,7 +143,7 @@ p {
 </style>
 - **职责描述：**
   - **数据处理：** 收集和整理历史对话数据，对数据进行清洗和标注，为模型训练提供高质量的数据，构建模型微调格式的数据集。
-  - **模型微调：** 开发优化模型代码，适配LoRA（降低finetune参数量）、P-Tuning V2和QLora（降低模型参数量）等微调技术，调整模型超参，对ChatGLM和LLaMA模型进行微调训练优化。集成DeepSpeed技术，实现模型的分布式训练，尝试ZeRO-1/2/3，通过分解optimizer states, gradients and weights，显著减少显存占用，使得在有限的资源下训练更大规模的模型成为可能。
+  - **模型微调：** 开发优化模型代码，适配LoRA（降低finetune参数量）、P-Tuning V2和QLora（降低模型参数量）等微调技术，调整模型超参，对ChatGLM和LLaMA模型进行微调训练优化。集成DeepSpeed技术，实现模型的分布式训练，尝试ZeRO-1/2/3，通过分解optimizer states, gradients and weights，显著减少显存占用，使得在有限的资源下训练更大规模模型成为可能。
   - **模型评估：** 评估模型微调的效果，针对Function Calling的每个参数（即Slot），评估准确率、召回率、F1值；针对文本回复，评估输出文本与参考文本之间的BLEU Score。
 
 ---
