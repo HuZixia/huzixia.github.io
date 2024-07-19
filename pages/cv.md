@@ -289,6 +289,7 @@ p {
   - **策略召回：**
 
 
+
 ALS：选择detail和add用户行为，根据userid, itemid，score用als计算相似职位
 
 ---
