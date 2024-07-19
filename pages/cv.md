@@ -284,7 +284,7 @@ p {
     - **ALS：** 选择用户的查看和开聊行为，根据userid、itemid、score进行ALS计算。通过ALS分解用户-物品交互矩阵，生成用户和物品的隐向量表示，用于计算相似物品。
     - **Content：** 根据物品属性信息匹配度合计总分，包括距离，position相似度，薪资、年龄、学历、公司匹配度等。通过属性信息来计算，扩大相似物品资源池，提高召回覆盖度。
     - **Item2Vec：** 基于用户行为得到itemid序列，增加side information，如city, position, title等，构造两两pair对item，利用n-gram特征捕捉词内部字符信息，训练fasttext模型，得到item向量。
-    - **Swing：** user-item-user的结构比itemCF的单边结构更稳定，itemCF考察两个物品重合的受众比例有多高，如果很多用户同时喜欢两个物品，判定两个物品相似。Swing额外考虑重合的用户是否来自同一个小圈子，如果overlap(u1, u2)越大，就越要降低权重，降低对物品相似度的贡献。
+    - **Swing：** user-item-user的结构比itemCF的单边结构更稳定，itemCF考察两个物品重合的受众比例有多高，如果很多用户同时喜欢两个物品，判定两个物品相似。Swing额外考虑重合的用户是否来自同一个小圈子，如果overlap(u1, u2)越大，就越要降低权重。
   - **向量召回：**
   - **策略召回：**
   - **召回融合：**
