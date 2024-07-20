@@ -410,3 +410,13 @@ p {
 ## **致谢说明**
 
 感谢您花时间阅读我的简历，期待能有机会和您共事。
+
+<p><strong>感谢您花时间阅读我的简历，期待能有机会和您共事。</strong></p>
+
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="line-height: 1.2; margin: 0;">
+    <p><strong>感谢您花时间阅读我的简历，期待能有机会和您共事。</strong></p>
+    <p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p>
+  </div>
+</div>
