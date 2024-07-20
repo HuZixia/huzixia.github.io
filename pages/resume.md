@@ -1,11 +1,11 @@
 ---
-layout: cv
+layout: resume
 title: 个人简介
 description: 个人简介
-keywords: CV, 推荐算法, 大模型微调
+keywords: Resume, 推荐算法, 大模型微调
 comments: true
-menu: CV
-permalink: /cv/
+menu: 简历
+permalink: /resume/
 mermaid: false
 sequence: false
 flow: false
