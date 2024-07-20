@@ -332,7 +332,7 @@ p {
 
 #### 项目五：蓝领交付
 
-- **项目技术：** Hive + Hadoop + Spark + BI + Feature + Label + DeepFM + FM
+- **项目技术：** Hive + Hadoop + Spark + BI + Feature + Label + DeepFM + FM + Gurobi
 <style>
 p {
     margin-bottom: 2em; /* 或者使用其他值，根据需要调整 */
