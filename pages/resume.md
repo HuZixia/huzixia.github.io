@@ -34,7 +34,7 @@ mindmap2: false
     <a href="https://github.com/HuZixia"><img src="https://img.shields.io/badge/GitHub-code-white" /></a>&emsp;
     <a href="https://twitter.com/zixia80631/"><img src="https://img.shields.io/badge/Twitter-推特-black" /></a>&emsp;
     <a href="https://github.com/HuZixia/Text2Video/assets/38995480/244e64be-3dc4-46bb-8aff-523d8a235a1e"><img src="https://img.shields.io/badge/WeChat-微信-07c160" /></a>
-    <a href="https://www.cnblogs.com/huzixia"><img src="https://img.shields.io/badge/CnBlog-博客园-gray" /></a>&emsp;
+    <a href="https://www.cnblogs.com/huzixia"><img src="https://img.shields.io/badge/CnBlog-博客园-blue" /></a>&emsp;
 
   </div>
 
