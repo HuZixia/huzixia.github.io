@@ -183,7 +183,7 @@ p {
 [//]: # (4. 表格标题，Embedding)
 [//]: # (5. 多模态模型，CLIP/BLIP)
 
-[//]: # (微软开发的一个基于 Transformer 的模型，用于表格检测任务。该模型的主要作用是从图像中检测和识别表格结构。)
+[//]: # (OCR模型，微软开发的一个基于 Transformer 的模型，用于表格检测任务。该模型的主要作用是从图像中检测和识别表格结构。)
 [//]: # (from transformers import AutoModelForObjectDetection)
 [//]: # (# 加载 TableTransformer 模型)
 [//]: # (model = AutoModelForObjectDetection.from_pretrained&#40;"microsoft/table-transformer-detection"&#41;)
@@ -193,13 +193,13 @@ p {
 
 #### 项目三：视频生成
 
-- **项目技术：** Agent + Stable Diffusion + DALL-E + 通义万象 + TTS + Prompt + Moviepy + ChatGLM
+- **项目技术：** Agent + Stable Diffusion + DALL-E + 通义万相 + TTS + Prompt + Moviepy + ChatGLM
 <style>
 p {
     margin-bottom: 2em; /* 或者使用其他值，根据需要调整 */
 }
 </style>
-- **项目简介：** 本项目旨在开发一个智能视频生成系统，通过整合多种先进技术，实现从文本、图片和视频生成高质量视频内容。系统基于多模态大模型，结合Agent协作机制，支持从文本生成视频、从文字和图片生成视频，以及从文字和现有视频生成新的视频。项目利用SD、DALL-E、通义万象生成图像，使用TTS技术生成语音，采用Moviepy合成视频。根据用户反馈迭代优化，提升效果。
+- **项目简介：** 本项目旨在开发一个智能视频生成系统，通过整合多种先进技术，实现从文本、图片和视频生成高质量视频内容。系统基于多模态大模型，结合Agent协作机制，支持从文本生成视频、从文字和图片生成视频，以及从文字和现有视频生成新的视频。项目利用SD、DALL-E、通义万相生成图像，使用TTS技术生成语音，采用Moviepy合成视频。根据用户反馈迭代优化，提升效果。
 <style>
 p {
     margin-bottom: 2em; /* 或者使用其他值，根据需要调整 */
