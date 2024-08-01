@@ -150,7 +150,7 @@ p {
 
 #### 项目二：智能客服
 
-- **项目技术：** RAG + LangChain + Function Calling + Text Embedding + Chromadb + Hybrid Search + ChatGLM + GPT-4V
+- **项目技术：** RAG + LangChain + Function Calling + Text Embedding + Chromadb + ChatGLM + GPT-4V
 <style>
 p {
     margin-bottom: 2em; /* 或者使用其他值，根据需要调整 */
