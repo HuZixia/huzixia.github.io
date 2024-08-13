@@ -73,50 +73,6 @@ mindmap2: false
 </div>
 
 
-## **专业证书**
-
-<div style="display: flex; justify-content: space-between;">
-  <div style="width: 48%; line-height: 1.2; margin: 0;">
-    <p><strong>工信部：</strong>人工智能—大模型与AIGC 高级证书</p>
-    <p><strong>工信部：</strong>大数据分析师 高级证书</p>
-  </div>
-  <div style="width: 48%; line-height: 1.2; margin: 0;">
-    <p><strong>Agent：</strong>AI Agent Developer 证书</p>
-    <p><strong>Microsoft：</strong>AI Applied Skills 证书</p>
-  </div>
-</div>
-
-
----
-
-<div style="display: flex; justify-content: space-between;">
-  <div style="line-height: 1.2; margin: 0;">
-    <p><strong>AI创客松：</strong>Multi-Agent for X 最佳人气奖 （阿里云 & 魔搭社区 & Datawhale）</p>
-    <p><strong>开源社区：</strong>动手学 AI 视频生成 最佳视频奖 （Datawhale & 奇想星球）</p>
-    <p><strong>企业荣誉：</strong>多次 荣获企业年度 A级 绩效奖、24薪等</p>
-    <p><strong>学校荣誉：</strong>多次 荣获国家奖学金、国家励志奖学金等</p>
-  </div>
-</div>
-
-
-[//]: # (&emsp;)
-
-## **专业技能**
-
-
-{% for cv in site.data.cv %}
-#### {{ cv.name }}
-<div class="btn-inline">
-{% for info in cv.keywords %}
-<button class="btn btn-outline" type="button">{{ info }}</button>
-{% endfor %}
-</div>
-{% endfor %}
-
----
-[//]: # (&emsp;)
-
-
 ## **工作经历**
 
 
@@ -405,6 +361,53 @@ p {
   - **用户特征：** 整合多个数据源中的用户数据，包括用户基本属性表、客户消费订单表、客户购买类目表、用户访问信息表等，形成用户宽表。根据数据仓库，计算用户扩展属性，如30天购买金额、最近一次消费时间等。
   - **模型预测：** 根据用户行为数据，提取有价值的特征，训练算法模型，对用户特性进行预测。如是否单身、是否有小孩、是否有车、是否有房等。这些预测结果为精准营销提供重要依据。
   - **精准营销：** 使用多维组合查询，筛选满足特定条件的目标用户，打上相应的标签，如预流失客户、夜猫子、单身一族、钟情白色、美妆达人等，根据这些标签，设计并推送针对性的营销活动，提高用户购买率和留存率。
+
+
+
+
+
+## **专业证书**
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 48%; line-height: 1.2; margin: 0;">
+    <p><strong>工信部：</strong>人工智能—大模型与AIGC 高级证书</p>
+    <p><strong>工信部：</strong>大数据分析师 高级证书</p>
+  </div>
+  <div style="width: 48%; line-height: 1.2; margin: 0;">
+    <p><strong>Agent：</strong>AI Agent Developer 证书</p>
+    <p><strong>Microsoft：</strong>AI Applied Skills 证书</p>
+  </div>
+</div>
+
+
+---
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="line-height: 1.2; margin: 0;">
+    <p><strong>AI创客松：</strong>Multi-Agent for X 最佳人气奖 （阿里云 & 魔搭社区 & Datawhale）</p>
+    <p><strong>开源社区：</strong>动手学 AI 视频生成 最佳视频奖 （Datawhale & 奇想星球）</p>
+    <p><strong>企业荣誉：</strong>多次 荣获企业年度 A级 绩效奖、24薪等</p>
+    <p><strong>学校荣誉：</strong>多次 荣获国家奖学金、国家励志奖学金等</p>
+  </div>
+</div>
+
+
+[//]: # (&emsp;)
+
+## **专业技能**
+
+
+{% for cv in site.data.cv %}
+#### {{ cv.name }}
+<div class="btn-inline">
+{% for info in cv.keywords %}
+<button class="btn btn-outline" type="button">{{ info }}</button>
+{% endfor %}
+</div>
+{% endfor %}
+
+---
+[//]: # (&emsp;)
 
 
 
