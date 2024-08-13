@@ -367,13 +367,15 @@ p {
 
 
 <div style="display: flex; justify-content: space-between;">
-    <p><strong>中国农业大学</strong> — 硕士</p> 
+    <p><strong>中国农业大学</strong></p>
+    <p><strong>硕士</strong></p> 
     <p><strong>2014 — 2016</strong></p>
 </div>
 
 
 <div style="display: flex; justify-content: space-between;">
-    <p><strong>安徽农业大学</strong> — 本科</p> 
+    <p><strong>安徽农业大学</strong></p>
+    <p><strong>本科</strong></p>
     <p><strong>2010 — 2014</strong></p>
 </div>
 
