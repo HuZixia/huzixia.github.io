@@ -88,7 +88,7 @@ mindmap2: false
 </div>
 
 
----
+[//]: # (---)
 
 <div style="display: flex; justify-content: space-between;">
   <div style="line-height: 1.2; margin: 0;">
