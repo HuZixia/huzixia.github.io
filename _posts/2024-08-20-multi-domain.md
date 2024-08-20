@@ -7,7 +7,7 @@ keywords: MultiDomain, PEPNet, STAR, M2M, APG, AdaSparse, HC^2, MARIA
 mermaid: false
 sequence: false
 flow: false
-mathjax: false
+mathjax: true
 mindmap: false
 mindmap2: false
 topmost: false
