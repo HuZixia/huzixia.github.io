@@ -88,14 +88,11 @@ $$
 e_{i j}=\text { attentiom }_{\text {net }}\left(\mathbf{y}_{i-1}, h_{j}\right)
 $$
 
-注意力网络通过 $y_{i-1} 和 h_j 来计算一个值 e_{i j}$
 
 
-注意力网络通过 $\mathbf{y}_{i-1} 和 h_j 来计算一个值 e_{i j}$
+<!-- 注意力网络通过 $\mathbf{y}_{i-1} 和 h_j 来计算一个值 e_{i j}$ -->
 
-注意力网络通过 $\mathbf{y}_{i-1} \text{ 和 } h_{j} \text{ 来计算一个值 } e_{i j}$
-
-注意力网络通过 $\mathbf{y}_{i-1}$ 和 $h_{j}$ 来计算一个值 $e_{i j}$, 这里的注意力网络可以设计各种操作, 比如对输入进行拼接再通过fc层进行计算等。
+注意力网络通过 $y_{i-1} 和 h_j 来计算一个值 e_{i j}$, 这里的注意力网络可以设计各种操作, 比如对输入进行拼接再通过fc层进行计算等。
 
 这里 $e_{i j}$ 是一个标量，但它还不是一个可用的权重值，还需要通过一个函数，把attention net对各个encoder hidden state的输出值转成一个分布：softmax。
 
@@ -216,7 +213,9 @@ BTW, 为什么计算中 $Q K^{T}$ 之后还要除以 $\sqrt{d}$
 
 MHA在2017年就随着 《Attention Is All You Need》一起提出，主要干的就是一个事：把原来一个 attention计算，拆成多个小份的attention，并行计算，分别得出结果，最后再合回原来的维度。
 
-MultiHeadAttention $(Q, K, V)=\operatorname{Concat}\left(\right.$ head $_{1}, \ldots$, head $\left._{h}\right)$
+<!-- MultiHeadAttention $(Q, K, V)=\operatorname{Concat}\left(\right.$ head $_{1}, \ldots$, head $\left._{h}\right)$ -->
+
+MultiHeadAttention $(Q, K, V)=$ Concat $\left(\right.$ head $_1, \ldots$, head $\left.h\right)$
 
 $$
 \operatorname{head}_{i}=\operatorname{Attention}\left(W_{i}^{Q} Q, W_{i}^{K} K, W_{i}^{V} V\right)
@@ -328,7 +327,9 @@ class MultiHeadedAttention(nn.Module):
 
 无论是encoder-decoder结构, 还是现在我们最接近AGI的decoder-only的LLM, 解码生成时都是自回归auto-regressive的方式。
 
-也就是，解码的时候，先根据当前输入 input $_{i-1}$ ，生成下一个 token $_{i}$ ，然后把新生成的 token $_{i}$ 拼接在 input $_{i-1}$ 后面, 获得新的输入 input $_{i}$, 再用 input ${ }_{i}$ 生成 token $_{i+1}$, 依此迭代, 直到生成结束。
+<!-- 也就是，解码的时候，先根据当前输入 input $_{i-1}$ ，生成下一个 token $_{i}$ ，然后把新生成的 token $_{i}$ 拼接在 input $_{i-1}$ 后面, 获得新的输入 input $_{i}$, 再用 input ${ }_{i}$ 生成 token $_{i+1}$, 依此迭代, 直到生成结束。 -->
+
+也就是，解码的时候，先根据当前输入 input ${ }_{i-1}$, 生成下一个 token $_i$, 然后把新生成的 token ${ }_i$ 拼接在 input $_{i-1}$ 后面，获得新的输入 input ${ }_i$, 再用 input ${ }_i$ 生成 token ${ }_{i+1}$ ，依此迭代，直到生成结束。
 
 比如我们输入"窗前明月光下一句是"，那么模型每次生成一个token，输入输出会是这样（方便起见, 默认每个token都是一个字符）
 
