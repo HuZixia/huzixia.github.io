@@ -130,7 +130,13 @@ EPNet将场景信息作为输入，输出不同特征的重要度分数，增强
 为了加快模型收敛，一般模型中都会加入BN（Batch Normalization），但BN其实有个前提假设是所有样本独立同分布，但在多场景中，样本往往只在场景内独立同分布，不满足BN的前提假设。所以作者提出了PN实现domain-specific标准化，具体的，PN训练时累计场景各自的的滑动均值以及方差，并且学习场景各自的shift参数。
 
 ### 3.2.3 辅助网络
-引入一个额外的小辅助网络，将场景相关特征送进去，并将其输出与主干网络相加然后经过sigmoid得到最终预估值，即 $\text{pctr} = \text{sigmoid}( \text{logit}_\text{main} + \text{logit}_\text{auxiliary})$。这样能够让场景相关特征直接影响最终预测值，捕捉场景差异性。
+引入一个额外的小辅助网络，将场景相关特征送进去，并将其输出与主干网络相加然后经过sigmoid得到最终预估值，即 
+
+<!-- $\text{pctr} = \text{sigmoid}( \text{logit}_\text{main} + \text{logit}_\text{auxiliary})$。 -->
+
+pctr $=$ sigmoid $\left(\right.$ logit $_{\text {main }}+$ logit $\left._{\text {auxiliary }}\right)$
+
+这样能够让场景相关特征直接影响最终预测值，捕捉场景差异性。
 
 
 ## 3.3 阿里M2M（WSDM 2022）
