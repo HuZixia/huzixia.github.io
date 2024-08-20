@@ -88,6 +88,9 @@ $$
 e_{i j}=\text { attentiom }_{\text {net }}\left(\mathbf{y}_{i-1}, h_{j}\right)
 $$
 
+注意力网络通过 $y_{i-1} 和 h_j 来计算一个值 e_{i j}$
+
+
 注意力网络通过 $\mathbf{y}_{i-1} 和 h_j 来计算一个值 e_{i j}$
 
 注意力网络通过 $\mathbf{y}_{i-1} \text{ 和 } h_{j} \text{ 来计算一个值 } e_{i j}$
