@@ -87,7 +87,7 @@ $$
 e_{i j}=\text { attentiom }_{\text {net }}\left(\mathbf{y}_{i-1}, h_{j}\right)
 $$
 
-注意力网络通过 $\mathbf{y}_{i-1}$ 和 $h_{j}$ 来计算一个值 $e_{i j}$, 这里的注意力网络可以设计各种操作, 比如对输入进行拼接再通过fc层进行计算等。
+注意力网络通过 $\mathbf{y}_{i-1}$ 和 $h_{j}$ 用来计算一个值 $e_{i j}$, 这里的注意力网络可以设计各种操作, 比如对输入进行拼接再通过fc层进行计算等。
 
 这里 $e_{i j}$ 是一个标量，但它还不是一个可用的权重值，还需要通过一个函数，把attention net对各个encoder hidden state的输出值转成一个分布：softmax。
 
