@@ -141,7 +141,7 @@ $$
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/attention/Atten07.png" style="margin-left: 0px" width="800px">
 
 
-这里的「query」, 「key」 和「 ${ }^{\text {value」 }}$ 的名称也暗示了整个attention计算的思路。
+这里的「query」, 「key」 和「value」 的名称也暗示了整个attention计算的思路。
 
 类比到一个数据库查询+预测的例子。
 
@@ -193,7 +193,7 @@ def forward(self, q, k, v, mask=None):
 
 ### 1.3.关于scaling
 
-BTW, 为什么计算中 $Q K^{T}$ 之后还要除以 $\sqrt{d} ?$
+BTW, 为什么计算中 $Q K^{T}$ 之后还要除以 $\sqrt{d}$
 
 简单来说，就是需要压缩softmax输入值，以免输入值过大，进入了softmax的饱和区，导致梯度值太小而难以训练。
 苏剑林的博客中也有详细分析，并提到如果不对attention值进行scaling，也可以通过在参数初始化是将方羞除以一个 $\sqrt{d}$, 同样可以起到预防softmax饱和的效果。类似地, 通过normalization也可以做到类似的效果。不过实现上在attention里做scaling还是比较稳定高效的。
