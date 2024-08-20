@@ -1,13 +1,19 @@
 ---
-title: 搜广推之多场景学习
-date: 2023-07-03 20:56:58
-toc: true
-mathjax: true
-categories: 
-- 搜广推
-tags:
-- 多场景学习
+layout: post
+title: MultiDomain｜搜广推之多场景学习
+categories: [MultiDomain]
+description: MultiDomain 搜广推之多场景学习
+keywords: MultiDomain, PEPNet, STAR, M2M, APG, AdaSparse, HC^2, MARIA
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
+topmost: true
 ---
+
+
 
 <center>
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/multidomain/intro.png" width="600" class="full-image">

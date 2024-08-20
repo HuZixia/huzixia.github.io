@@ -1,3 +1,19 @@
+---
+layout: post
+title: Attention｜一文理解Attention:从起源到MHA,MQA和GQA
+categories: [Attention]
+description: Attention 一文理解Attention:从起源到MHA,MQA和GQA
+keywords: Attention, MHA, MQA, GQA
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
+topmost: true
+---
+
+
 # 一文理解Attention:从起源到MHA,MQA和GQA
 
 [//]: # (https://www.linsight.cn/3dc22f96.html)
