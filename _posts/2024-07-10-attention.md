@@ -75,21 +75,21 @@ Memory is attention through time. ~ Alex Graves 2020
 
 那么问题又来了，我们怎么知道前面某一个中间状态对于当前的生成来说是否重要？如果我们不知道怎么定义是否重要，那我们就把这个问题交给模型自己解决好了 -- 通过网络参数来学习识别某个输入状态是否重要，学习是否要"注意"到它，要给予多少的"注意力"。
 
-具体来说，我们定义在解码第 $i$ 个输出是， decoder当前隐状态 $y_{i-1}$ 和encoder的所有隐状态 $\mathbf{h}$之间的一个score计算
-
+具体来说，我们定义在解码第 $i$ 个输出是， decoder当前隐状态 $y_{i-1}$ 和encoder的所有隐状态 $\mathbf{h}$ 之间的一个score计算
 $$
-\mathbf{e}_{i}=\operatorname{attention}_{\text {net }}\left(y_{i-1}, \mathbf{h}\right) \in R^{n}
+\mathbf{e}_i=\text { attention }_{\text {net }}\left(y_{i-1}, \mathbf{h}\right) \in R^n
 $$
 
 其中
-
 $$
-e_{i j}=\text { attentiom }_{\text {net }}\left(\mathbf{y}_{i-1}, h_{j}\right)
+e_{i j}=\text { attentiom }_{\text {net }}\left(\mathbf{y}_{i-1}, h_j\right)
 $$
 
-注意力网络通过 $\mathbf{y}_{i-1}$ 和 $h_{j}$ 用来计算一个值 $e_{i j}$, 这里的注意力网络可以设计各种操作, 比如对输入进行拼接再通过fc层进行计算等。
+注意力网络通过 $\mathbf{y}_{i-1}$ 和 $h_j$ 来计算一个值 $e_{i j}$, 这里的注意力网络可以设计各种操作，比如对输入进行拼接再通过 fc 层进行计算等。
 
-这里 $e_{i j}$ 是一个标量，但它还不是一个可用的权重值，还需要通过一个函数，把attention net对各个encoder hidden state的输出值转成一个分布：softmax。
+这里 $e_{i j}$ 是一个标量，但它还不是一个可用的权重值，还需要通过一个函数，把attention net对各个encoder hidden state的输出值转成一个分布： softmax。
+
+
 
 $$
 \alpha_{i j}=\frac{\exp \left(e_{i j}\right)}{\sum_{k=1}^{T_{x}} \exp \left(e_{i k}\right)}
