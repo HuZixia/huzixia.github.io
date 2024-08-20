@@ -134,7 +134,7 @@ EPNet将场景信息作为输入，输出不同特征的重要度分数，增强
 
 <!-- $\text{pctr} = \text{sigmoid}( \text{logit}_\text{main} + \text{logit}_\text{auxiliary})$。 -->
 
-pctr $=$ sigmoid $\left(\right.$ logit $_{main}+$ logit $\left._{auxiliary}\right)$
+$$ pctr = sigmoid \left(\right. logit _{main}+ logit \left._{auxiliary}\right)$$
 
 这样能够让场景相关特征直接影响最终预测值，捕捉场景差异性。
 

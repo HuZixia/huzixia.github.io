@@ -329,7 +329,9 @@ class MultiHeadedAttention(nn.Module):
 
 <!-- 也就是，解码的时候，先根据当前输入 input $_{i-1}$ ，生成下一个 token $_{i}$ ，然后把新生成的 token $_{i}$ 拼接在 input $_{i-1}$ 后面, 获得新的输入 input $_{i}$, 再用 input ${ }_{i}$ 生成 token $_{i+1}$, 依此迭代, 直到生成结束。 -->
 
-也就是，解码的时候，先根据当前输入 input $_{i-1}$, 生成下一个 token $_i$, 然后把新生成的 token ${ }_i$ 拼接在 input $_{i-1}$ 后面，获得新的输入 input ${ }_i$, 再用 input ${ }_i$ 生成 token ${ }_{i+1}$ ，依此迭代，直到生成结束。
+也就是，解码的时候，先根据当前输入 input $_{i-1}$, 生成下一个 token $_i$, 然后把新生成的 token $_i$ 拼接在 input $_{i-1}$ 后面，获得新的输入 input $_i$, 再用 input $_i$ 生成 token $_{i+1}$ ，依此迭代，直到生成结束。
+
+也就是，解码的时候，先根据当前输入 input ${ }_{i-1}$, 生成下一个 token $_i$, 然后把新生成的 token ${ }_i$ 拼接在 input $_{i-1}$ 后面，获得新的输入 input ${ }_i$, 再用 input ${ }_i$ 生成 token ${ }_{i+1}$ ，依此迭代，直到生成结束。
 
 比如我们输入"窗前明月光下一句是"，那么模型每次生成一个token，输入输出会是这样（方便起见, 默认每个token都是一个字符）
 
