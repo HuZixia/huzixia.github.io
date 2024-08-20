@@ -14,6 +14,7 @@ topmost: false
 ---
 
 
+不同用户群体（如新老用户）、APP不同频道模块、不同客户端等，可以看作不同场景。多场景建模是解决不同场景/分布下的相同任务，如对不同场景样本预估相同的 CTR 目标。主要内容有：PEPNet, STAR, M2M, APG, AdaSparse, HC^2, MARIA。
 
 <center>
 <img src="https://cdn.jsdelivr.net/gh/HuZixia/CloudGo/pictures/resources/multidomain/intro.png" width="600" class="full-image">

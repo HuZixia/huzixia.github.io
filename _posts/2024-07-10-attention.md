@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Attention｜一文理解Attention:从起源到MHA,MQA和GQA
+title: Attention｜一文理解Attention:MHA,MQA和GQA
 categories: [Attention]
-description: Attention 一文理解Attention:从起源到MHA,MQA和GQA
+description: Attention 一文理解Attention:MHA,MQA和GQA
 keywords: Attention, MHA, MQA, GQA
 mermaid: false
 sequence: false
@@ -12,6 +12,9 @@ mindmap: false
 mindmap2: false
 topmost: false
 ---
+
+
+一文理解Attention:从起源到MHA,MQA和GQA。Attention模块是现在几乎所有大模型的核心模块，因此也有很多工作致力于提升注意力计算的性能和效果。主要内容有：关于Attention、从RNN到Attention、Transformer的attention、MHA、MQA、GQA、KV Cache等。
 
 
 # 一文理解Attention:从起源到MHA,MQA和GQA
