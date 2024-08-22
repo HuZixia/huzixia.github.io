@@ -33,8 +33,11 @@ topmost: false
 为什么需要多场景学习？
 
 1）如果采用各场景独立的方式，会忽视场景共性，加剧数据稀疏性，导致长尾小场景难以学好；
+
 2）每个场景维护一个模型，会极大地增加系统资源开销和人力成本；
+
 3）如果直接将样本混合，训练共享模型，会忽视场景差异性；
+
 4）如果各场景数据量不均衡，容易被数据量大的大场景主导，数据量小的小场景学习不好。
 
 因此，多场景学习建模的是不同场景的共性和以及异性（或者说各场景的特性）。
@@ -55,8 +58,11 @@ topmost: false
 
 ## 2.3 场景子网络
 为了强化场景特征对模型输出的影响，可以考虑构建一个子网络，输入场景特征，然后将输出作用到主网络的某处：
+
 1）SubNet-logit：作用到最终输出，与主网络logit相加，如STAR中的辅助网络；
+
 2）SubNet-NN：作用到主网络中间某些层（例如MMoE的gate，作用方法一般可用attention、动态权重等），如M2M、PPNet等；
+
 3）SubNet-embed：作用到主网络输入层，例如对输入的特征学习重要度分数，如PEPNet中的EPNet；
 
 <center>
@@ -89,7 +95,9 @@ topmost: false
 </center>
 
 如图所示，PPNet具体做法是：
+
 1）利用一个小的子网络GateNN，输入一些ID类特征（换成场景特征就可以实现多场景建模）及主干网络特征（GateNN梯度不回传主干网络特征）；
+
 2）GateNN的每层输出（激活函数是2 * sigmoid）和主网络DNN每层输入维度相同，这样就可以和主网络各层输入做element-wise乘法，从而引入个性化偏置；
 
 ### 3.1.2 EPNet
@@ -106,6 +114,7 @@ EPNet将场景信息作为输入，输出不同特征的重要度分数，增强
 论文链接：[One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction](https://arxiv.org/abs/2101.11427)
 
 核心思想是每个场景都有自己独有的MLP参数，最终的参数通过独有参数乘以共享参数得到。
+
 整体模型结构如下图所示，相比于单场景（左）模型，STAR有三个改动：星型拓扑结构FCN、Partitioned Normalization以及辅助网络。
 
 <center>
@@ -121,6 +130,7 @@ EPNet将场景信息作为输入，输出不同特征的重要度分数，增强
 </center>
 
 作者认为，这种方式与业界常用方案MMoE的优势在于：
+
 - STAR包含共享参数：MMoE对不同任务采用独立的 FC 层，而STAR包含共享参数可以学习场景共性行为（可引入共享塔解决）；
 - STAR显式建模多场景：MMoE 通过学习 gate 隐式建模场景间的关系，会丢失显示的 domain-specific 知识，而 STAR 引入场景先验，通过场景私有/共享参数显示建模场景间的关系；
 - STAR计算量更小：MMoE需要计算每个场景的 expert，相对共享模型 FC 层会有 M 倍的计算开销 (M 为场景数)，而 STAR 稀疏激活的特性不引入额外计算，和原来计算开销持平；
@@ -175,8 +185,10 @@ APG（Adaptive Parameter Generation）的核心思路和M2M中的动态权重是
 
 论文链接：[AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction](https://arxiv.org/abs/2206.13108)
 
-作者认为不管是新增domain-specific可学习参数（如STAR），还是通过动态权重的方法生成参数（如M2M、APG），复杂度都较高，且泛化能力有限。因此论文从提升多场景模型泛化性和计算效率出发，提出AdaSparse模型：    
+作者认为不管是新增domain-specific可学习参数（如STAR），还是通过动态权重的方法生成参数（如M2M、APG），复杂度都较高，且泛化能力有限。因此论文从提升多场景模型泛化性和计算效率出发，提出AdaSparse模型：
+
 1）引入神经元级场景感知权重因子，用来衡量不同场景下神经元的重要性；
+
 2）通过裁剪(Pruner)冗余神经元实现不同场景不同的稀疏结构；
 
 <center>
@@ -185,8 +197,11 @@ APG（Adaptive Parameter Generation）的核心思路和M2M中的动态权重是
 
 ### 3.5.1 Domain-adaptive Pruner
 如上图右边部分所示，Pruner是一个轻量化的模型，对于第 $l$ 层，Pruner的输入是主网络第 $l$ 层的神经元 $h^l$ 和场景特征 $e_d$，输出是维度和 $h^l$ 一致的场景感知因子 $\pi^l$，二者element-wise相乘得到输出。场景感知因子 $\pi^l$ 有三种计算方法：
+
 1）Binarization：场景感知因子非0即1，即设定一个阈值进行二值化，相当于hard方式；
+
 2）Scaling：相当于soft方式（这就有点像PPNet了）；
+
 3）Fusion：结合上面两种方式；
 
 ### 3.5.2 稀疏可控正则
