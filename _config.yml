@@ -104,6 +104,11 @@ navs:
     href: /resume/
     label: 简历
 
+
+  -
+    href: /cv/
+    label: 简历
+
   -
     href: /about/
     label: 关于
