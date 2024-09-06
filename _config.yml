@@ -105,9 +105,9 @@ navs:
     label: 简历
 
 
-  -
-    href: /cv/
-    label: 简历
+#  -
+#    href: /cv/
+#    label: 简历
 
   -
     href: /about/
