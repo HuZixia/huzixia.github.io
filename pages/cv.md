@@ -393,22 +393,22 @@ p {
   - **精准营销：** 使用多维组合查询，筛选满足特定条件的目标用户，打上相应的标签，如预流失客户、夜猫子、单身一族、钟情白色、美妆达人等，根据这些标签，设计并推送针对性的营销活动，提高用户购买率和留存率。
 
 
-## **教育信息**
-
-
-<div style="display: flex; justify-content: space-between;">
-    <p><strong>中国农业大学</strong></p>
-    <p><strong>硕士</strong></p> 
-    <p><strong>2014 — 2016</strong></p>
-</div>
-
-
-<div style="display: flex; justify-content: space-between;">
-    <p><strong>安徽农业大学</strong></p>
-    <p><strong>本科</strong></p>
-    <p><strong>2010 — 2014</strong></p>
-</div>
-
+[//]: # (## **教育信息**)
+[//]: # ()
+[//]: # ()
+[//]: # (<div style="display: flex; justify-content: space-between;">)
+[//]: # (    <p><strong>中国农业大学</strong></p>)
+[//]: # (    <p><strong>硕士</strong></p> )
+[//]: # (    <p><strong>2014 — 2016</strong></p>)
+[//]: # (</div>)
+[//]: # ()
+[//]: # ()
+[//]: # (<div style="display: flex; justify-content: space-between;">)
+[//]: # (    <p><strong>安徽农业大学</strong></p>)
+[//]: # (    <p><strong>本科</strong></p>)
+[//]: # (    <p><strong>2010 — 2014</strong></p>)
+[//]: # (</div>)
+[//]: # ()
 
 
 
