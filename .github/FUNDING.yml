@@ -11,3 +11,22 @@ issuehunt: # Replace with a single IssueHunt username
 otechie: # Replace with a single Otechie username
 lfx_crowdfunding: # Replace with a single LFX Crowdfunding project-name e.g., cloud-foundry
 custom: https://huzixia.github.io/donate/
+
+on:
+  schedule:
+    # Runs at 12am IST
+    - cron: '30 18 * * *'
+  workflow_dispatch:
+#jobs:
+#  update-readme:
+#    name: Update Readme with Metrics
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: anmol098/waka-readme-stats@master
+#        with:
+#          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+#          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+#          # 时间线
+#          SHOW_LOC_CHART: "False"
+#          SHOW_TOTAL_CODE_TIME : "False"
+#          SHOW_PROFILE_VIEWS : "False"
