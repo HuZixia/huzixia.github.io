@@ -41,40 +41,23 @@ mindmap2: false
 </div>
 
 
-## **求职意向**
-
-<div style="display: flex; justify-content: space-between;">
-  <div style="width: 48%; line-height: 1.2; margin: 0;">
-    <p><strong>岗位：</strong>算法工程师</p>
-  </div>
-  <div style="width: 48%; line-height: 1.2; margin: 0;">
-    <p><strong>坐标：</strong>北京</p>
-  </div>
-</div>
-
 
 ## **基本信息**
 
 <div style="display: flex; justify-content: space-between;">
   <div style="width: 48%; line-height: 1.2; margin: 0;">
     <p><strong>姓名：</strong>胡紫霞</p>
-    <p><strong>学校：</strong>中国农业大学</p>
-    <p><strong>学历：</strong>985 硕士</p>
+    <p><strong>电话：</strong>17600431688</p>
     <p><strong>英语：</strong>GRE, CET-6</p>
-    <p><strong>工龄：</strong>8年</p>
   </div>
   <div style="width: 48%; line-height: 1.2; margin: 0;">
-    <p><strong>电话：</strong>17600431688</p>
-    <p><strong>微信：</strong>17600431688</p>
-    <p><strong>邮箱：</strong>zixiahu2024@gmail.com</p>
-    <p><strong>代码：</strong>MetaGPT 代码贡献者</p>
-    <p><strong>博客：</strong>https://huzixia.github.io</p>
+    <p><strong>教育：</strong>中国农业大学 985硕士</p>
+    <p><strong>邮箱：</strong>ZixiaHu@cau.edu.cn</p>
+    <p><strong>Code：</strong>MetaGPT 代码贡献者</p>
   </div>
 </div>
 
-
-
-## **专业证书**
+---
 
 <div style="display: flex; justify-content: space-between;">
   <div style="width: 48%; line-height: 1.2; margin: 0;">
@@ -88,7 +71,8 @@ mindmap2: false
 </div>
 
 
-[//]: # (---)
+
+---
 
 <div style="display: flex; justify-content: space-between;">
   <div style="line-height: 1.2; margin: 0;">
@@ -98,6 +82,112 @@ mindmap2: false
     <p><strong>学校荣誉：</strong>多次 荣获国家奖学金、国家励志奖学金等</p>
   </div>
 </div>
+
+---
+
+[//]: # ()
+[//]: # ()
+[//]: # (## **求职意向**)
+
+[//]: # ()
+[//]: # (<div style="display: flex; justify-content: space-between;">)
+
+[//]: # (  <div style="width: 48%; line-height: 1.2; margin: 0;">)
+
+[//]: # (    <p><strong>岗位：</strong>算法工程师</p>)
+
+[//]: # (  </div>)
+
+[//]: # (  <div style="width: 48%; line-height: 1.2; margin: 0;">)
+
+[//]: # (    <p><strong>坐标：</strong>北京</p>)
+
+[//]: # (  </div>)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # ()
+[//]: # (## **基本信息**)
+
+[//]: # ()
+[//]: # (<div style="display: flex; justify-content: space-between;">)
+
+[//]: # (  <div style="width: 48%; line-height: 1.2; margin: 0;">)
+
+[//]: # (    <p><strong>姓名：</strong>胡紫霞</p>)
+
+[//]: # (    <p><strong>学校：</strong>中国农业大学</p>)
+
+[//]: # (    <p><strong>学历：</strong>985 硕士</p>)
+
+[//]: # (    <p><strong>英语：</strong>GRE, CET-6</p>)
+
+[//]: # (    <p><strong>工龄：</strong>8年</p>)
+
+[//]: # (  </div>)
+
+[//]: # (  <div style="width: 48%; line-height: 1.2; margin: 0;">)
+
+[//]: # (    <p><strong>电话：</strong>17600431688</p>)
+
+[//]: # (    <p><strong>微信：</strong>17600431688</p>)
+
+[//]: # (    <p><strong>邮箱：</strong>zixiahu2024@gmail.com</p>)
+
+[//]: # (    <p><strong>代码：</strong>MetaGPT 代码贡献者</p>)
+
+[//]: # (    <p><strong>博客：</strong>https://huzixia.github.io</p>)
+
+[//]: # (  </div>)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # ()
+[//]: # ()
+[//]: # (## **专业证书**)
+
+[//]: # ()
+[//]: # (<div style="display: flex; justify-content: space-between;">)
+
+[//]: # (  <div style="width: 48%; line-height: 1.2; margin: 0;">)
+
+[//]: # (    <p><strong>工信部：</strong>人工智能—大模型与AIGC 高级证书</p>)
+
+[//]: # (    <p><strong>工信部：</strong>大数据分析师 高级证书</p>)
+
+[//]: # (  </div>)
+
+[//]: # (  <div style="width: 48%; line-height: 1.2; margin: 0;">)
+
+[//]: # (    <p><strong>Agent：</strong>AI Agent Developer 证书</p>)
+
+[//]: # (    <p><strong>Microsoft：</strong>AI Applied Skills 证书</p>)
+
+[//]: # (  </div>)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # ()
+[//]: # ([//]: # &#40;---&#41;)
+[//]: # ()
+[//]: # (<div style="display: flex; justify-content: space-between;">)
+
+[//]: # (  <div style="line-height: 1.2; margin: 0;">)
+
+[//]: # (    <p><strong>AI创客松：</strong>Multi-Agent for X 最佳人气奖 （阿里云 & 魔搭社区 & Datawhale）</p>)
+
+[//]: # (    <p><strong>开源社区：</strong>动手学 AI 视频生成 最佳视频奖 （Datawhale & 奇想星球）</p>)
+
+[//]: # (    <p><strong>企业荣誉：</strong>多次 荣获企业年度 A级 绩效奖、24薪等</p>)
+
+[//]: # (    <p><strong>学校荣誉：</strong>多次 荣获国家奖学金、国家励志奖学金等</p>)
+
+[//]: # (  </div>)
+
+[//]: # (</div>)
 
 
 [//]: # (&emsp;)
