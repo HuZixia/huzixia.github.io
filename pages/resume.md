@@ -72,7 +72,7 @@ mindmap2: false
 
 
 
-[//]: # (---)
+---
 
 <div style="display: flex; justify-content: space-between;">
   <div style="line-height: 1.2; margin: 0;">
@@ -83,7 +83,7 @@ mindmap2: false
   </div>
 </div>
 
-[//]: # (---)
+---
 
 
 ## **教育信息**
@@ -102,7 +102,7 @@ mindmap2: false
     <p><strong>2010 — 2014</strong></p>
 </div>
 
-
+---
 
 ## **论文信息**
 
@@ -121,7 +121,7 @@ mindmap2: false
 </div>
 
 
-
+---
 
 [//]: # ()
 [//]: # ()
@@ -866,7 +866,7 @@ mindmap2: false
 
 - 这些工作，不仅提高了电商平台的推荐效果和用户体验，还帮助公司更好地理解用户需求，制定更精准的市场策略。
 
-
+---
 ## **专业技能**
 
 
