@@ -57,7 +57,7 @@ mindmap2: false
   </div>
 </div>
 
----
+[//]: # (---)
 
 <div style="display: flex; justify-content: space-between;">
   <div style="width: 48%; line-height: 1.2; margin: 0;">
@@ -72,7 +72,7 @@ mindmap2: false
 
 
 
----
+[//]: # (---)
 
 <div style="display: flex; justify-content: space-between;">
   <div style="line-height: 1.2; margin: 0;">
@@ -83,7 +83,7 @@ mindmap2: false
   </div>
 </div>
 
----
+[//]: # (---)
 
 
 ## **教育信息**
