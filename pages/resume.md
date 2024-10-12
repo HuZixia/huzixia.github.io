@@ -85,6 +85,44 @@ mindmap2: false
 
 ---
 
+
+## **教育信息**
+
+
+<div style="display: flex; justify-content: space-between;">
+    <p><strong>中国农业大学</strong></p>
+    <p><strong>硕士</strong></p> 
+    <p><strong>2014 — 2016</strong></p>
+</div>
+
+
+<div style="display: flex; justify-content: space-between;">
+    <p><strong>安徽农业大学</strong></p>
+    <p><strong>本科</strong></p>
+    <p><strong>2010 — 2014</strong></p>
+</div>
+
+
+
+## **论文信息**
+
+
+[//]: # (    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="https://zsyz.cbpt.cnki.net/WKB3/WebPublication/paperDigest.aspx?paperID=14d834e7-83e8-40e6-a6da-fde80707572a">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>)
+[//]: # (    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong><a href="https://zgdw.cbpt.cnki.net/WKD2/WebPublication/paperDigest.aspx?paperID=9885335d-bef2-482b-984d-21500d516f30">Preparation and trial application of yolk antibody of duck tembusu virus)
+
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="line-height: 1.2; margin: 0;">
+    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="https://kns.cnki.net/kcms2/article/abstract?v=6RlcORkFSJTZqKQlc4bXGzDVxbOdy6Kj6UpbJqfOW_MCMGte9OznPsEA7l6r3ieFQG8rSJehEJZ7Yqp_y2DPyZQ2xOBZooFxesB230E2Ee_yLX917N1S_QZfm10ikln4pq9MQXAJwfk=&uniplatform=NZKPT&flag=copy">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>
+    <p><strong>2017 — DRUG DELIVERY（IF: 6.8）：</strong><a href="https://www.tandfonline.com/doi/full/10.1080/10717544.2017.1284945">Sustained release ivermectin-loaded solid lipid dispersion for subcutaneous delivery: in vitro and in vivo evaluation</a></p>
+    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong><a href="https://kns.cnki.net/kcms2/article/abstract?v=6RlcORkFSJTfUCPU7BKtCcIPkdptbHAdck6k9ZgF_MlH9aQbUHCGUGrL-4C_1ULnxkZaKL925JzMtJYEe469f6hUwMqYj8MF9d14hfL4ozGJcOjsTNDDyNiJ30eLFGmO&uniplatform=NZKPT&flag=copy">Preparation and trial application of yolk antibody of duck tembusu virus
+</a></p>
+  </div>
+</div>
+
+
+
+
 [//]: # ()
 [//]: # ()
 [//]: # (## **求职意向**)
@@ -827,42 +865,6 @@ mindmap2: false
   - 推荐系统的优化显著提升了推荐的点击率和转化率，带动了平台的整体销售增长。
 
 - 这些工作，不仅提高了电商平台的推荐效果和用户体验，还帮助公司更好地理解用户需求，制定更精准的市场策略。
-
-
-## **教育信息**
-
-
-<div style="display: flex; justify-content: space-between;">
-    <p><strong>中国农业大学</strong></p>
-    <p><strong>硕士</strong></p> 
-    <p><strong>2014 — 2016</strong></p>
-</div>
-
-
-<div style="display: flex; justify-content: space-between;">
-    <p><strong>安徽农业大学</strong></p>
-    <p><strong>本科</strong></p>
-    <p><strong>2010 — 2014</strong></p>
-</div>
-
-
-
-## **论文信息**
-
-
-[//]: # (    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="https://zsyz.cbpt.cnki.net/WKB3/WebPublication/paperDigest.aspx?paperID=14d834e7-83e8-40e6-a6da-fde80707572a">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>)
-[//]: # (    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong><a href="https://zgdw.cbpt.cnki.net/WKD2/WebPublication/paperDigest.aspx?paperID=9885335d-bef2-482b-984d-21500d516f30">Preparation and trial application of yolk antibody of duck tembusu virus)
-
-
-<div style="display: flex; justify-content: space-between;">
-  <div style="line-height: 1.2; margin: 0;">
-    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="https://kns.cnki.net/kcms2/article/abstract?v=6RlcORkFSJTZqKQlc4bXGzDVxbOdy6Kj6UpbJqfOW_MCMGte9OznPsEA7l6r3ieFQG8rSJehEJZ7Yqp_y2DPyZQ2xOBZooFxesB230E2Ee_yLX917N1S_QZfm10ikln4pq9MQXAJwfk=&uniplatform=NZKPT&flag=copy">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>
-    <p><strong>2017 — DRUG DELIVERY（IF: 6.8）：</strong><a href="https://www.tandfonline.com/doi/full/10.1080/10717544.2017.1284945">Sustained release ivermectin-loaded solid lipid dispersion for subcutaneous delivery: in vitro and in vivo evaluation</a></p>
-    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong><a href="https://kns.cnki.net/kcms2/article/abstract?v=6RlcORkFSJTfUCPU7BKtCcIPkdptbHAdck6k9ZgF_MlH9aQbUHCGUGrL-4C_1ULnxkZaKL925JzMtJYEe469f6hUwMqYj8MF9d14hfL4ozGJcOjsTNDDyNiJ30eLFGmO&uniplatform=NZKPT&flag=copy">Preparation and trial application of yolk antibody of duck tembusu virus
-</a></p>
-  </div>
-</div>
-
 
 
 ## **专业技能**
