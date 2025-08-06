@@ -381,7 +381,7 @@ p {
 ---
 
 <div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;"><strong>高级算法工程师 — 北京华品博睿网络技术有限公司</strong></p> 
+    <p style="font-size: 20px;"><strong>高级算法工程师 — 北京华品博睿网络技术有限公司 — 优秀员工奖</strong></p> 
     <p style="font-size: 20px;"><strong>2018 — 2023</strong></p>
 </div>
 
