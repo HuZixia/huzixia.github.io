@@ -203,7 +203,7 @@ mindmap2: false
 
 
 <div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;"><strong>资深算法工程师 — 百融云创科技股份有限公司 — 杰出贡献奖</strong></p> 
+    <p style="font-size: 20px;"><strong>资深算法工程师 — 百融云创科技股份有限公司</strong></p> 
     <p style="font-size: 20px;"><strong>2024 — 至今</strong></p>
 </div>
 
@@ -213,7 +213,7 @@ mindmap2: false
 
 
 
-#### 项目一：进件路由
+#### 项目一：进件路由 —— 杰出贡献奖
 
 - **项目技术：** 多目标学习（MTL） + 推荐系统 + 智能路由机制 + 特征工程 + 数据分析 + A/B 实验 + 流量精细化分配算法
 <style>
