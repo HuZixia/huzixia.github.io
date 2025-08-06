@@ -200,10 +200,9 @@ mindmap2: false
 
 <div style="display: flex; justify-content: space-between;">
   <div style="line-height: 1.2; margin: 0;">
-    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>
-    <p><strong>2017 — DRUG DELIVERY（IF: 6.8）：</strong><a href="">Sustained release ivermectin-loaded solid lipid dispersion for subcutaneous delivery: in vitro and in vivo evaluation</a></p>
-    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong><a href="">Preparation and trial application of yolk antibody of duck tembusu virus
-</a></p>
+    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong>Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</p>
+    <p><strong>2017 — DRUG DELIVERY（IF: 6.8）：</strong>Sustained release ivermectin-loaded solid lipid dispersion for subcutaneous delivery: in vitro and in vivo evaluation</p>
+    <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong>Preparation and trial application of yolk antibody of duck tembusu virus</p>
   </div>
 </div>
 
