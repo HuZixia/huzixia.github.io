@@ -104,7 +104,7 @@ mindmap2: false
 ## **教育信息**
 
 
-<!-- <div style="display: flex; justify-content: space-between;">
+<div style="display: flex; justify-content: space-between;">
     <p><strong>中国农业大学</strong> — 农学硕士 — 预防兽医学</p> 
     <p><strong>2014 — 2016</strong></p>
 </div>
@@ -119,11 +119,11 @@ mindmap2: false
 <div style="display: flex; justify-content: space-between;">
     <p><strong>安徽农业大学</strong> — 管理学学士 — 财务管理</p> 
     <p><strong>2010 — 2014</strong></p>
-</div> -->
+</div>
 
 
 
-<div style="display: flex; justify-content: space-between;">
+<!-- <div style="display: flex; justify-content: space-between;">
     <p><strong>中国农业大学</strong></p>
     <p><strong>硕士</strong></p> 
     <p><strong>2014 — 2016</strong></p>
@@ -135,7 +135,7 @@ mindmap2: false
     <p><strong>本科</strong></p>
     <p><strong>2010 — 2014</strong></p>
 </div>
-
+ -->
 
 
 ---
@@ -603,7 +603,7 @@ p {
 
 
 
-## **专业技能**
+<!-- ## **专业技能**
 
 
 {% for cv in site.data.cv %}
@@ -613,7 +613,7 @@ p {
 <button class="btn btn-outline" type="button">{{ info }}</button>
 {% endfor %}
 </div>
-{% endfor %}
+{% endfor %} -->
 
 ---
 [//]: # (&emsp;)
