@@ -94,7 +94,7 @@ mindmap2: false
   <div style="line-height: 1.2; margin: 0;">
     <p><strong>AI创客松：</strong>Multi-Agent for X 最佳人气奖 （阿里云 & 魔搭社区 & Datawhale）</p>
     <p><strong>开源社区：</strong>动手学 AI 视频生成 最佳视频奖 （Datawhale & 奇想星球）</p>
-    <p><strong>企业荣誉：</strong>多次 荣获企业年度 A级 绩效奖、24薪等</p>
+    <p><strong>企业荣誉：</strong>多次 荣获企业年度 A级 绩效奖、24薪；百融云创杰出贡献奖季度之星</p>
     <p><strong>学校荣誉：</strong>多次 荣获国家奖学金、国家励志奖学金等</p>
   </div>
 </div>
@@ -139,9 +139,9 @@ mindmap2: false
 
 
 ---
-
+<!-- 
 常用 Python、SQL、Scala 及多种大数据工具，具备大模型微调（LoRA、QLoRA）、多模态算法（Diffusion、TTS）、推荐系统（MTL、MMoE、PLE、CEM、级联融合）与数据分析能力，能够高效将前沿 AI 技术应用于推荐、内容生成与商业增长场景中。负责参与金融进件路由、提现路由、整体撞库、智能营销、智能客服、视频生成系统等核心项目，全面负责推荐系统的召回、排序、重排等关键环节，有效提升业务指标。具备扎实的业务理解力、良好的团队协作与沟通能力，兼具快速学习与技术创新能力。
-
+ -->
 
 
 ## **专业技能**
@@ -150,15 +150,29 @@ mindmap2: false
 <div style="display: flex; justify-content: space-between;">
   <div style="line-height: 1.2; margin: 0;">
     <p><strong>编程语言：</strong>熟练掌握 Python、SQL、Shell、Scala、Java</p>
-    <p><strong>大模型与多模态：</strong>掌握 LoRA、QLoRA、P-Tuning、RLHF、CLIP、Diffusion、TTS、FlashAttention、DeepSpeed</p>
-    <p><strong>模型开发与部署：</strong>熟悉 LangChain、Function Calling、RAG、AutoGPT、Agent 架构，掌握 Flask、FastAPI</p>
-    <p><strong>推荐算法：</strong>覆盖 Recall、Rank、ReRank 全链路，熟悉 XGBoost、DeepFM、ESMM、MMoE、PLE、CEM、RL 等模型，理解 MAP、AUC、TOPN 等评估指标</p>
-    <p><strong>数据分析与策略：</strong>具备用户行为建模、指标分析（DAU、CTR、GMV、LTV、ROI）能力，经验丰富于 Sample、Label、Feature 管理</p>
-    <p><strong>大数据技术：</strong>熟悉 Hive、Hadoop、Spark、Flink 等主流数据处理工具</p>
+    <p><strong>大模型与多模态：</strong>掌握 LoRA、QLoRA、P-Tuning、RLHF 等主流微调方法，熟悉 CLIP、Diffusion、TTS、LLaVA 等多模态模型的应用与落地，了解 FlashAttention、DeepSpeed 等训练加速技术</p>
+    <p><strong>模型开发与部署：</strong>熟悉 LangChain、Function Calling、RAG、AutoGPT、Agent 架构，使用 Flask 和 FastAPI 构建推理与服务框架</p>
+    <p><strong>推荐算法与策略：</strong>覆盖 Recall、Rank、ReRank 全链路，熟悉 XGBoost、DeepFM、ESMM、MMoE、PLE、CEM、强化学习等模型，深入理解 MAP、AUC、TopN 等评估指标，具备策略制定与效果评估能力</p>
+    <p><strong>数据分析与增长：</strong>具备用户行为建模、关键指标分析（DAU、CTR、GMV、LTV、ROI）能力，擅长样本构建、标签体系与特征工程管理，支持精细化运营与业务增长决策</p>
+    <p><strong>大数据技术：</strong>熟悉 Hive、Hadoop、Spark、Flink 等主流大数据处理与计算框架</p>
   </div>
 </div>
 
 
+
+
+## **项目技能**
+
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="line-height: 1.2; margin: 0;">
+    <p><strong>金融场景 AI 解决方案设计：</strong>深耕信贷云、场景金融等核心业务，从 0 到 1 设计智能路由系统（撞库/进件/提现全流程），通过精准匹配提升放款效率与收益，支撑榕树业务放款增量超 2 亿元，场景金融业务增量超 千万元，具备金融业务痛点分析与技术落地能力</p>
+    <p><strong>大模型技术深度应用：</strong>主导大模型微调（LoRA/QLora/PEFT）、RAG 技术集成（LangChain/Chromadb）、Agent 协作机制落地，在智能营销（短信文案生成）、智能客服（知识库检索 / 表格处理）等场景实现个性化需求匹配，理解大模型技术边界与应用逻辑</p>
+    <p><strong>POC 流程与团队协作：</strong>跨产品、运营、研发等部门推进算法方案落地，设计实验指标与分析体系，通过 A/B 实验验证策略效果（如进件路由人均放款提升 3%-30%+），具备需求拆解、资源协调及问题快速响应能力</p>
+    <p><strong>客户需求挖掘与转化：</strong>基于用户画像与数据分析构建精准推荐逻辑（如提现路由个性化推荐带来超 600 万放款增量），沉淀 “业务痛点 - 技术方案 - 效果量化” 闭环经验，可转化为客户需求洞察与解决方案设计能力</p>
+    <p><strong>多算法技术栈支撑：</strong>精通推荐系统（召回/排序/重排全链路）、多目标学习（MTL）、特征工程（1000 + 特征开发），熟悉强化学习、进化策略等优化方法，为金融场景 AI 解决方案提供扎实技术背书</p>
+  </div>
+</div>
 
 
 
@@ -166,7 +180,7 @@ mindmap2: false
 
 
 <div style="display: flex; justify-content: space-between;">
-    <p style="font-size: 20px;"><strong>资深算法工程师 — 百融云创科技股份有限公司</strong></p> 
+    <p style="font-size: 20px;"><strong>资深算法工程师 — 百融云创科技股份有限公司 — 杰出贡献奖</strong></p> 
     <p style="font-size: 20px;"><strong>2024 — 至今</strong></p>
 </div>
 
