@@ -144,6 +144,23 @@ mindmap2: false
 
 
 
+## **专业技能**
+
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="line-height: 1.2; margin: 0;">
+    <p><strong>编程语言：</strong>熟练掌握 Python、SQL、Shell、Scala、Java</p>
+    <p><strong>大模型与多模态：</strong>掌握 LoRA、QLoRA、P-Tuning、RLHF、CLIP、Diffusion、TTS、FlashAttention、DeepSpeed</p>
+    <p><strong>模型开发与部署：</strong>熟悉 LangChain、Function Calling、RAG、AutoGPT、Agent 架构，掌握 Flask、FastAPI</p>
+    <p><strong>推荐算法：</strong>覆盖 Recall、Rank、ReRank 全链路，熟悉 XGBoost、DeepFM、ESMM、MMoE、PLE、CEM、RL 等模型，理解 MAP、AUC、TOPN 等评估指标</p>
+    <p><strong>数据分析与策略：</strong>具备用户行为建模、指标分析（DAU、CTR、GMV、LTV、ROI）能力，经验丰富于 Sample、Label、Feature 管理</p>
+    <p><strong>大数据技术：</strong>熟悉 Hive、Hadoop、Spark、Flink 等主流数据处理工具</p>
+  </div>
+</div>
+
+
+
+
 
 ## **工作经历**
 
