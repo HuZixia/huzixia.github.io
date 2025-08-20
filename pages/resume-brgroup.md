@@ -76,7 +76,7 @@ mindmap2: false
 <div style="display: flex; justify-content: space-between;">
   <div style="width: 48%; line-height: 1.2; margin: 0;">
     <p><strong>姓名：</strong>胡紫霞</p>
-    <p><strong>电话：</strong>XXX</p>
+    <p><strong>电话：</strong>17600431688</p>
     <p><strong>英语：</strong>GRE, CET-6</p>
   </div>
   <div style="width: 48%; line-height: 1.2; margin: 0;">
@@ -112,7 +112,7 @@ mindmap2: false
 </div>
 
 
-<!-- 
+
 ## **教育信息**
 
 
@@ -132,7 +132,7 @@ mindmap2: false
     <p><strong>安徽农业大学</strong> — 管理学学士 — 财务管理</p> 
     <p><strong>2010 — 2014</strong></p>
 </div>
- -->
+
 
 
 <!-- <div style="display: flex; justify-content: space-between;">
@@ -156,7 +156,7 @@ mindmap2: false
  -->
 
 
-<!-- 
+
 ## **项目技能**
 
 
@@ -170,7 +170,7 @@ mindmap2: false
     <p><strong>多算法技术栈的支撑：</strong>精通推荐系统（召回/排序/重排全链路）、多目标学习（MTL）、特征工程（1000 + 特征开发），熟悉强化学习、进化策略等算法模型，为金融场景 AI 解决方案提供扎实技术背书</p>
   </div>
 </div>
- -->
+
 
 
 
@@ -190,7 +190,7 @@ mindmap2: false
 
 
 
-<!-- ## **论文信息** -->
+## **论文信息**
 
 
 [//]: # (    <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong><a href="https://zsyz.cbpt.cnki.net/WKB3/WebPublication/paperDigest.aspx?paperID=14d834e7-83e8-40e6-a6da-fde80707572a">Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</a></p>)
@@ -209,20 +209,20 @@ mindmap2: false
 
 
 
-<!-- 
+
 <div style="display: flex; justify-content: space-between;">
   <div style="line-height: 1.2; margin: 0;">
     <p><strong>2018 — CHINESE JOURNAL OF VETERINARY MEDICINE：</strong>Research on Correlation between Drug Release Behavior of Ivermectin and Solubility of Medium</p>
     <p><strong>2017 — DRUG DELIVERY（IF: 6.8）：</strong>Sustained release ivermectin-loaded solid lipid dispersion for subcutaneous delivery: in vitro and in vivo evaluation</p>
     <p><strong>2013 — CHINA ANIMAL HEALTH INSPECTION：</strong>Preparation and trial application of yolk antibody of duck tembusu virus</p>
   </div>
-</div> -->
+</div>
 
 
 
 ---
 
-<!-- 
+
 
 ## **工作经历**
 
@@ -657,11 +657,11 @@ p {
 <button class="btn btn-outline" type="button">{{ info }}</button>
 {% endfor %}
 </div>
-{% endfor %} 
+{% endfor %} -->
 
 ---
 [//]: # (&emsp;)
- -->
+
 
 
 ## **致谢说明**
